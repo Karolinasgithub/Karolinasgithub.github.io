@@ -1,0 +1,135 @@
+p{
+    background-color: gainsboro;
+    border: 0.8px solid;
+}
+body{
+    margin: none;
+}
+.navbar{
+    background-color: gray;
+    border: 3px solid blue;
+
+}
+.navbar div{
+    border: 1px solid;
+}
+
+.header_logo{
+  
+    border: 3px solid blue;
+}
+.header_logo div{
+    border: 1px solid;
+}
+
+.logo{
+    
+    border: 1px solid;
+}
+
+.header .soc-m_box {
+    border: 1px solid;
+}
+.slogan {
+    border: 3px solid blue;
+}
+.slogan h4{
+    border: 1px solid;
+}
+.latest_posts {
+    border: 3px solid blue;
+}
+.post_1{
+    display: flex;
+    border: 3px solid blue; 
+}
+.post_1 article{
+    max-width: 60%;
+    min-width: 60%;
+    margin-right: 50px;
+    margin-left: 30px;
+    border: 1px solid;
+    padding: 15px 30px 15px 30px;
+    background-color: gray;
+}
+.post_1 article h1{
+    background-color: gainsboro;
+    border: 1px solid;
+}
+.post_1 article h6{
+    background-color: gainsboro;
+    border: 1px solid;
+}
+.post_1 article img{
+    max-width: 45%;
+    min-width: 42%;
+    min-height: 60%;
+    max-height: 60%;
+    float: left;
+    border: 1px solid rgb(72, 72, 135);
+    margin-right: 15px;
+
+}
+.post_1 article p{
+    max-width: 45%;
+    min-width: 42%;
+    min-height: 60%;
+    max-height: 600%;
+    float: left;
+    border: 1px solid rgb(72, 72, 135);
+   
+}
+
+.post_1 article button{
+    float: right;
+}
+
+.post_1 div{
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+    float: right;
+    max-width: 20%;
+    padding: 0px 30px 15px 30px;
+    background-color: gray;
+    margin-right: 30px
+   
+    
+} 
+.post_1 artikel button a{
+    width: 200px;
+    height: 30px;
+    
+}
+.post_2{
+    border: 3px solid blue;
+}
+.post_3{
+    border: 3px solid blue;
+}
+.post_4{
+    border: 3px solid blue;
+}
+
+.buttonto_older{
+    height: 60px;
+    display: flex;
+    
+}
+.buttonto_older button{
+
+    height: 30px;
+    margin-top: 15px;
+}
+.footer_1{
+    border: 3px solid blue;
+}
+.footer_2{
+    border: 3px solid blue;
+}
+.footer_3{
+    border: 3px solid blue;
+}
+.footer_4{
+    border: 3px solid blue;
+}

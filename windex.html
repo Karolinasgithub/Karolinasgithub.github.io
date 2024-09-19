@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Wstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer's Block Blogg</title>
+</head>
+
+<body>
+    <!--  HEADER tag - Jake.    Navbar är en box för sig-->
+    <nav class="navbar">
+        <div>horizontell meny</div><!--horizontell meny-->
+        <div>dropdown</div><!--dropdown meny-->
+        <div>lång kantig sökruta</div><!--lång kantig sökruta-->
+        <div>kort oval sök med icon</div><!--en oval kort sökruta med ett förstoringsglas-->
+    </nav>
+    
+    <header class="header_logo"> <!--Header med logga på vänster och social media på höger-->
+        <div> Logga <!--logga, till vänster-->
+            <img src="" alt=""> Bild
+            <!--under loggan ligger namnet, men mitt namn ligger ju i loggan-->
+        </div>
+
+        <div class="soc-m_box"> social media icon meny
+            <ul> <!--är a ett inline-element? 
+                Måste jag ha a inne i li tagg?-->
+                <a href="">facebook</a>
+                <a href="">facebook</a>
+                <a href="">facebook</a>
+                <a href="">facebook</a>
+                <a href="">facebook</a>
+            </ul>
+        </div>
+   
+
+    <section class="slogan"> <!--direkt under första delen av headern
+        innehåller slogan, beskrivning av sidan
+        centrerade paragrafer-->
+        <h4>slogan</h4>
+        <h4>vad vi är</h4>
+    </section>
+<!--end tag HEADER Jake-->
+    <section class="latest_posts"> <!-- "senaste inläggen" en remsa som ligger fast och artiklarna 
+        scrollar in under. Förmodligen sticky position xantal px från toppen-->
+       <h3>Senaste inläggen</h3>
+    </section>
+    <!--Här kommer blogg inlägg, korta från vilka man 
+    klickar sig in till hel artikel. Kan hända att det är en dropdown-->
+</header>
+    <section class="post_1">
+            
+        <article>
+            <h1>blogpost 1</h1>
+            <h6>by writer datum</h6> 
+            <img src="" alt="thumbnail"> <!--thumbnail för att den blir
+            större när man går över till hel artikel-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vitae culpa illum, at rem molestiae quasi modi iste pariatur cumque doloremque sunt. Debitis, porro ipsum illum eos iusto voluptas et.</p>
+            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
+            absolut position i förhållande till sin närmsta alltså article-->
+         
+
+        </article>
+
+        <div> <!-- SIDOBAR!! Box med länkar till tidigare poster och 
+            annat på höger sida. Ska säkert också vara sticky pos.-->
+            <h3>Arkiv</h3> <!--artikel arkiv, månader - länk-->
+            <ul>
+                <li><a href="">Månad år</a></li>
+                <li><a href="">månad år</a></li>
+                <li><a href="">månad år</a></li>
+            </ul>
+
+            <h3>Tags</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est, voluptates numquam consectetur quo harum, nulla, dolor repellendus voluptate accusantium beatae illum unde perspiciatis consequuntur explicabo! Est debitis nesciunt dolore.</p> <!--tror att det är en text där varje del
+            är ett span med en a tagg och olika text storlek, färg osv-->
+            
+            <Button>Sök i alla tidigare</Button> <!--oval sökruta med förstoringsglas-->
+
+        </div>
+    </section>
+
+    <section class="post_2">
+        <h1>Bloggpost 2</h1>
+        <h6>by writer date</h6>
+        <article>
+       
+            <img src="" alt=""> <!--thumbnail för att den blir
+            större när man går över till hel artikel-->
+       
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur deleniti eos in, corporis hic maiores id iure quia repellat a. Dolorum, placeat labore facilis similique accusamus necessitatibus harum sint.</p>
+      
+            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
+            absolut position i förhållande till sin närmsta alltså article-->
+        </article>
+    </section>
+
+    <section class="post_3">
+        <h1>Bloggpost 3</h1>
+        <h6>by writer date</h6>
+        <article>
+            
+            <img src="" alt=""> <!--thumbnail för att den blir
+            större när man går över till hel artikel-->
+
+           <div >
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, labore ex facilis doloribus itaque nemo beatae, dolorem ratione sunt praesentium ullam illum hic laudantium fugit eum optio, fuga voluptatum quo!</p>
+            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
+            absolut position i förhållande till sin närmsta alltså article-->
+            </div>
+        </article>
+    </section>
+
+    <section class="post_4"> <!--border solid top och bottom-->
+        <h1>Bloggpost 4</h1>
+        <h6>by writer date</h6>
+         <article>
+            <img src="" alt=""> <!--thumbnail för att den blir
+            större när man går över till hel artikel-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam voluptatum dolor ad, doloremque quasi qui consequuntur odit earum, molestias excepturi atque culpa totam rem eveniet vero nihil, suscipit fugiat!</p>
+            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
+            absolut position i förhållande till sin närmsta alltså article-->
+        </article>
+    </section>
+<section class="buttonto_older">
+    <button >older posts</button> <!--fyrkantig, med en pil shadow-->
+</section>
+ <footer class="footer_1">
+    <h1></h1>
+    <h1></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed recusandae, quam rem iste expedita deserunt aspernatur ipsa repellendus? Nobis culpa eum modi iste facilis, accusantium perferendis voluptatem ipsam quam!</p>
+</footer> <!--reklam box-->
+<footer class="footer_2"> <!--länkar till alla sidor, spalter-->
+    <div>
+        ul
+    </div>
+    <div></div>
+        ul
+    <div></div>
+        ul
+    <div></div>
+</footer> 
+<footer class=footer_3>
+    <p></p>
+    <ul>
+        a
+    </ul>
+</footer> <!--copyright och soc_m länkar-->
+<footer class="footer_4"></footer> <!--en tunn remsa med färg-->
+
+</body>
+</html>
