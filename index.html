@@ -1,152 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Wstyle.css">
+   
+    <script src="https://kit.fontawesome.com/b053b00bce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writer's Block Blogg</title>
+    <title>Writers Block</title>
 </head>
-
 <body>
-    <!--  HEADER tag - Jake.    Navbar är en box för sig-->
-    <nav class="navbar">
-        <div>horizontell meny</div><!--horizontell meny-->
-        <div>dropdown</div><!--dropdown meny-->
-        <div>lång kantig sökruta</div><!--lång kantig sökruta-->
-        <div>kort oval sök med icon</div><!--en oval kort sökruta med ett förstoringsglas-->
-    </nav>
-    
-    <header class="header"> <!--Header med logga på vänster och social media på höger-->
-        <div> Logga <!--logga, till vänster-->
-            <img src="" alt=""> Bild
-            <!--under loggan ligger namnet, men mitt namn ligger ju i loggan-->
-        </div>
-
-        <div class="soc-m_box"> social media icon meny
-            <ul> <!--är a ett inline-element? 
-                Måste jag ha a inne i li tagg?-->
-                <a href="">facebook</a>
-                <a href="">facebook</a>
-                <a href="">facebook</a>
-                <a href="">facebook</a>
-                <a href="">facebook</a>
-            </ul>
-        </div>
-   
-
-    <section class="slogan"> <!--direkt under första delen av headern
-        innehåller slogan, beskrivning av sidan
-        centrerade paragrafer-->
-        <h4>slogan</h4>
-        <h4>vad vi är</h4>
-    </section>
-<!--end tag HEADER Jake -- jag satte den ett steg ner-->
-    <section class="latest_posts"> <!-- "senaste inläggen" en remsa som ligger fast och artiklarna 
-        scrollar in under. Förmodligen sticky position xantal px från toppen-->
-       <h3>Senaste inläggen</h3>
-    </section>
-    <!--Här kommer blogg inlägg, korta från vilka man 
-    klickar sig in till hel artikel. Kan hända att det är en dropdown-->
-</header>
-    <section class="post_1">
-            
-        <article>
-            <h1>blogpost 1</h1>
-            <h6>by writer datum</h6> 
-            <img src="" alt="thumbnail"> <!--thumbnail för att den blir
-            större när man går över till hel artikel-->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vitae culpa illum, at rem molestiae quasi modi iste pariatur cumque doloremque sunt. Debitis, porro ipsum illum eos iusto voluptas et.</p>
-            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
-            absolut position i förhållande till sin närmsta alltså article-->
-         
-
-        </article>
-
-        <div> <!-- SIDOBAR!! Box med länkar till tidigare poster och 
-            annat på höger sida. Ska säkert också vara sticky pos.-->
-            <h3>Arkiv</h3> <!--artikel arkiv, månader - länk-->
-            <ul>
-                <li><a href="">Månad år</a></li>
-                <li><a href="">månad år</a></li>
-                <li><a href="">månad år</a></li>
-            </ul>
-
-            <h3>Tags</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est, voluptates numquam consectetur quo harum, nulla, dolor repellendus voluptate accusantium beatae illum unde perspiciatis consequuntur explicabo! Est debitis nesciunt dolore.</p> <!--tror att det är en text där varje del
-            är ett span med en a tagg och olika text storlek, färg osv-->
-            
-            <Button>Sök i alla tidigare</Button> <!--oval sökruta med förstoringsglas-->
-
-        </div>
-    </section>
-
-    <section class="post_2">
-        <h1>Bloggpost 2</h1>
-        <h6>by writer date</h6>
-        <article>
-       
-            <img src="" alt=""> <!--thumbnail för att den blir
-            större när man går över till hel artikel-->
-       
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur deleniti eos in, corporis hic maiores id iure quia repellat a. Dolorum, placeat labore facilis similique accusamus necessitatibus harum sint.</p>
-      
-            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
-            absolut position i förhållande till sin närmsta alltså article-->
-        </article>
-    </section>
-
-    <section class="post_3">
-        <h1>Bloggpost 3</h1>
-        <h6>by writer date</h6>
-        <article>
-            
-            <img src="" alt=""> <!--thumbnail för att den blir
-            större när man går över till hel artikel-->
-
-           <div >
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, labore ex facilis doloribus itaque nemo beatae, dolorem ratione sunt praesentium ullam illum hic laudantium fugit eum optio, fuga voluptatum quo!</p>
-            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
-            absolut position i förhållande till sin närmsta alltså article-->
+    <header class="header"> <!--HEADER
+        <nav class="navbar">
+                <ul id="menue">
+                    <li><a href="#">HEM</a></li>
+                    <li><a href="#">OM</a></li>
+                    <li><a href="#">KONTAKT</a></li>
+                    <li><a href="#">ARKIV</a></li>
+                </ul>
+            <div class="dropdown">
+                <button>HEM</button> 
+                <div>
+                    <a href="#">OM OSS</a>
+                    <a href="#">KONTAKT</a>
+                    <a href="#">ARKIV</a>
+                </div>
             </div>
-        </article>
-    </section>
+        </nav> -->
+        <div class="headermain">
+            <a href="nyindex.html"><img id="logo" src="Wimages/lådlogotrehus.png"alt="logo"></a> <!--lägga en div runt?-->
+           
+            <div class="sm-bar">
+                <a href="https://facebook.com/">
+                    <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+                </a>
+            </div>
+        </div>
+    </header> <!--HEADER END-->
 
-    <section class="post_4"> <!--border solid top och bottom-->
-        <h1>Bloggpost 4</h1>
-        <h6>by writer date</h6>
-         <article>
-            <img src="" alt=""> <!--thumbnail för att den blir
-            större när man går över till hel artikel-->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam voluptatum dolor ad, doloremque quasi qui consequuntur odit earum, molestias excepturi atque culpa totam rem eveniet vero nihil, suscipit fugiat!</p>
-            <button><a href="">Läs hela</a></button> <!--knappen får ha en 
-            absolut position i förhållande till sin närmsta alltså article-->
-        </article>
-    </section>
-<section class="buttonto_older">
-    <button >older posts</button> <!--fyrkantig, med en pil shadow-->
-</section>
- <footer class="footer_1">
-    <h1></h1>
-    <h1></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed recusandae, quam rem iste expedita deserunt aspernatur ipsa repellendus? Nobis culpa eum modi iste facilis, accusantium perferendis voluptatem ipsam quam!</p>
-</footer> <!--reklam box-->
-<footer class="footer_2"> <!--länkar till alla sidor, spalter-->
-    <div>
-        ul
-    </div>
-    <div></div>
-        ul
-    <div></div>
-        ul
-    <div></div>
-</footer> 
-<footer class=footer_3>
-    <p></p>
-    <ul>
-        a
-    </ul>
-</footer> <!--copyright och soc_m länkar-->
-<footer class="footer_4"></footer> <!--en tunn remsa med färg-->
+        <section id="slogan">
+            <h1>Writer´s Block </h1>
+                <h5>Klara färdiga skriv! Placera en fisk någonstans.</h5>
+        </section>
+        <section id="latestpost">
+            <h3>Latest posts:</h3>
+        </section>
+    
 
+<section class="container"> <!--CONTAINER-->
+
+    <section class="content"> <!--CONTENT BOX-->
+       <article class="bloggposter">
+            <h3 id="bloggrubrik">Bloggpost 1</h3>
+            <h6 id="bywriter">by Karolina Mutiso Lundberg   date</h6>
+            <div class="bloggbildtext">
+                <img id="bloggbild" src="Wimages/8.jpg" alt="BILD">
+                <p id="bloggtext">
+                    I dikter betyder varje ord lite mer och de är finare 
+                    med högre kvalité. <br>
+                    Högtravande och uppblåsta sitter poeterna med sina höga hattar och tittar ner på alla de små människorna
+                    som hastar runt utan att stanna och titta på varken sig själva
+                    eller varandra. <br> Diktarna ser minsann de. De ser allt. 
+                    De är i kontakt med allt och de tar sig tid att göra det 
+                    som ingen annan hinner. <br> Poeterna tar sig själva på stort allvar.
+                    De har svaret på livets mening och de vet varför varje blad
+                    vänder sig i vinden och de vet allt vad de små människorna
+                    tänker och vad de känner.
+                </p>
+            </div>
+            <button id="bloggknapp">Läs hela</button>
+        </article>
+
+        <article class="bloggposter">
+            <h3 id="bloggrubrik">Bloggpost 2</h3>
+            <h6 id="bywriter">by Karolina Mutiso Lundberg   date</h6>
+            <div class="bloggbildtext">
+                <img id="bloggbild" src="Wimages/2.jpg" alt="BILD">
+                <p id="bloggtext">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Sapiente a doloremque ea iusto dolorum labore modi, corporis
+                vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
+                modi harum atque dignissimos.
+                </p>
+            </div>
+            <button id="bloggknapp">Läs hela</button>
+        </article>
+
+        <article class="bloggposter">
+            <h3 id="bloggrubrik">Bloggpost 3</h3>
+            <h6 id="bywriter">by Karolina Mutiso Lundberg   date</h6>
+            <div class="bloggbildtext">
+                <img id="bloggbild" src="Wimages/3.jpg" alt="BILD">
+                <p id="bloggtext">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Sapiente a doloremque ea iusto dolorum labore modi, corporis
+                vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
+                modi harum atque dignissimos.
+                </p>
+            </div>
+            <button id="bloggknapp">Läs hela</button>
+        </article>
+
+        <article class="bloggposter">
+            <h3 id="bloggrubrik">Bloggpost 4</h3>
+            <h6 id="bywriter">by Karolina Mutiso Lundberg date</h6>
+            <div class="bloggbildtext">
+                <img id="bloggbild" src="Wimages/4.jpg" alt="BILD">
+                <p id="bloggtext">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Sapiente a doloremque ea iusto dolorum labore modi, corporis
+                vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
+                modi harum atque dignissimos.
+                </p>
+            </div>
+            <button id="bloggknapp">Läs hela</button>
+        </article>
+        <div id="older_post_box">
+            <button>Tidigare inlägg   ></button>
+        </div>
+    
+
+    </section>. <!--CONTENT BOX END-->
+
+    
+    <aside class="sidebar"> <!--SIDEBAR BOX-->
+        <div class="arkivbox">
+            <h3 id="arkivrubrik">Writer's Arkiv</h3>
+            <ul id="arkivlista">
+                <li>September</li>
+                <li>Augusti</li>
+                <li>Vår 2024</li>
+                <li>Höst 2023</li>
+        </div>
+        <div class="tagsbox">
+            <h3 id="tagsrubrik">Writer's Tags</h3>
+            <ul class="tagslist">
+                <li><a id="poesi" href="">poesi</a></li> 
+                <li><a id="abbie" href="">Abbie Emmons</a></li> 
+                <li><a id="hook" href="">Hook</a></li>
+                <li><a id="protagonist" href="">Protagonist</a></li>
+                <li><a id="three-act" href="">3-Act Structure</a></li>
+                <li><a id="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
+                <li><a id="scrivener" href="">Scrivener</a></li>
+                <li><a id="fumla" href="">Fumla</a></li> 
+            </ul>
+        </div>
+    </aside> <!--SIDEBAR BOX END-->
+</section> <!--CONTAINER END-->
+
+<!--
+    <footer class="footer">
+
+        <div id="foot_ad">
+            <h3>Build customer loyalty. Increase sales.</h3>
+            <h4>Free trial bla, bla, bla</h4>
+        </div>
+        <div>
+
+            4 listor? bara <a> och placerade i columner?
+
+        </div class="foot_bottom">
+            <div id="rights_box">
+            <h6>all rights reserved.</h6>
+        </div>
+            </div class=foot_sm-bar>
+            <div class="sm-bar">
+                <a href="https://facebook.com/">
+                    <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+                </a>
+            </div> 
+       
+        <h1>Writer's Block</h1>
+    </footer> -->
+    <footer class="footer"> 
+
+        <section id="footer_slogan">
+            <a href="#">Besök Writer's Blocks underbara sammelsuriumlåda.</a>
+                <h2>Hjärtligt välkommen!</h2>
+        </section>
+
+        <div class="footermain">
+            <a href="nyindex.html"><img id="footer_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
+           <div class="copy_box">
+            <h5>Copyright</h5>
+            <img id="copy" src="Wimages/copyrightblack.png" alt="" srcset="">
+            <h5>2024</h5>
+            <h4>Writer's Block</h4>
+            <h5>Alla rättigheter förbehållna</h5>
+        </div>
+            <div class="footer_sm-bar">
+                <a href="https://facebook.com/">
+                    <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+                </a>
+            </div>
+        </div>
+        
+        <section id="footer_last_post">
+            <h3></h3>
+        </section>
+    </footer> <!--HEADER END-->
+
+    
 </body>
 </html>
