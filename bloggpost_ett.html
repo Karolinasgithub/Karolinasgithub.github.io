@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="bloggpost_style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bloggpost</title>
 </head>
 <body>
     <header class="header"> 
@@ -25,7 +25,7 @@
             </div>
         </div>
     </header> <!--HEADER END-->
-    <h3 id="welcome">Välkommen till Writer´s Block och ett sammelsurium av ord.</h3>
+    <h3 id="welcome">Välkommen till Writer´s Block och ett sammelsurium av ord.</h3> 
     <section class="container">
                 <!--section content i style.css-->
         <article class="bloggpost">
@@ -76,8 +76,9 @@
                     <li>Augusti</li>
                     <li>Vår 2024</li>
                     <li>Höst 2023</li>
-                </div>
-                <div class="tagsbox">
+                </ul>
+
+            <div class="tagsbox">
                 <h3 id="tagsrubrik">Writer's Tags</h3>
                 <ul class="tagslist">
                     <li><a id="poesi" href="">Poesi</a></li> 
@@ -89,15 +90,17 @@
                     <li><a id="scrivener" href="">Scrivener</a></li>
                     <li><a id="fumla" href="">Fumla</a></li> 
                 </ul>
-            </div>
+            </div> <!--end tagsbox-->
+
         </aside> <!--SIDEBAR BOX END-->
+
     </section> <!--End container @media  set to direction column-->
-       
+    
 
-       
+    <footer class="footer"> 
 
-        <footer class="footer"> 
-            <div id="footer_remsa">
+        <div id="footer_remsa">
+
             <section class="footer_list">
                 <!--<a href="#">Besök Writer's Blocks underbara sammelsuriumlåda.</a>-->
                 <ul>
@@ -116,33 +119,43 @@
                     <li><a id="scrivener" href="">Scrivener</a></li>
                     <li><a id="fumla" href="">Fumla</a></li> 
                 </ul>
-            </div>
-            <div class="footermain">
-                <a href="nyindex.html"><img id="footer_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
-               <div class="copy_box">
+            </section> <!--end class="footer_list"-->
+
+        </div> <!--End id="footer_remsa"-->
+
+
+        <div class="footermain">
+
+            <a href="nyindex.html"><img id="footer_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
+
+            <div class="copy_box">
                 <h5>Copyright</h5>
                 <img id="copy" src="Wimages/copyrightblack.png" alt="" srcset="">
                 <h5>2024</h5>
                 <h4>Writer's Block</h4>
                 <h6>Alla rättigheter förbehållna</h6>
-            </div>
-                <div class="footer_sm-bar">
-                    <a href="https://facebook.com/">
-                        <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
-                    </a>
-                    <a href="https://instagram.com">
-                        <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
-                    </a>
-                    <a href="https://linkedin.com">
-                        <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
-                    </a>
-                </div>
-            </div>
+            </div> <!--end class=copy_box-->
+
+            <div class="footer_sm-bar">
+                <a href="https://facebook.com/">
+                <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
+                </a>
+                <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+                </a>
+            </div> <!--end class=footer_sm-bar-->
+
+        </div> <!--end class=footermain-->
+                    
             
-            <section id="footer_last_post">
-                <h3></h3>
-            </section>
-        </footer> <!--HEADER END-->
+        <section id="footer_last_post">
+            <h3></h3>
+        </section>
+
+    </footer> <!--HEADER END-->
 
 </body>
 </html>

@@ -91,14 +91,14 @@ body{
     margin-right: 10px;
 }
  */
- .header{
+ .container_header{
     position: fixed;
     top: 0px;
     left:0px;
     right: 0px;
  }
  
-.headermain{
+.content_header{
    
     height: 105px;
     display: flex;
@@ -109,24 +109,26 @@ body{
     background-size: cover;
     background-position: center;
 }
-#logo{
+#header_logo{
     height: 170px;
     width: 200px;
 }
-#logo:hover{
+#header_logo:hover{
     cursor: pointer;
 }
-.sm-bar{
+.box_header_socialmedia-bar{
     max-width: 60px;
     display: flex;
     justify-content: space-between;
     margin-right: 90px;    
 }
-.sm-bar a{
+.box_header_socialmedia-bar a{
     max-height: 60px;
     padding-right: 10px;
 }
-/*
+/* sparar lite för om jag vill
+ ha en annan färg i headernn än i footern
+
 .fa-brands.fa-square-facebook{
     color: rgb(26, 47, 44);
 }
@@ -146,7 +148,17 @@ body{
     color:  rgb(92, 116, 106);
 }
     */
-#slogan{
+
+/* END HEADER*/
+
+/*START SECTION CONTAINER*/
+
+.container_main{ 
+    display: flex;
+    flex-direction: column;
+    
+}
+.content_main_slogan{
     display: flex;
     /*background-color: rgb(92, 116, 106);*/
     margin-top: 105px;
@@ -157,7 +169,7 @@ body{
     margin-left: 0px;
     
 }
-#slogan h1{
+.content_main_slogan h1{
    margin-top: 20px;
    margin-bottom: 0px;
    margin-left: 20px;
@@ -167,7 +179,7 @@ body{
    font-style: italic;
   
 }
-#slogan h5{
+.content_main_slogan h5{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -176,7 +188,7 @@ body{
     
     
 }
-#latestpost{
+.content_main_latestpost{
    display: flex;
     background-color:  rgb(26, 47, 44);
     color: white;
@@ -191,21 +203,13 @@ body{
     och i den ligger.bloggposter
     med padding-left 20px.*/
 }
-/* END HEADER*/
 
-/*START SECTION CONTAINER*/
-
-.container{ /*förälder till content och sidebar*/
-    display: flex;
-    flex-direction: row;
-    
-}
-.content{ /*förälder till bloggposter*/
+.content_main_blogposts{ /*förälder till bloggposter*/
     display: flex;
     flex-direction: column;
     margin-left: 40px;
 }
-.bloggposter{ /*förälder till h3, h6, bloggbildtext*/
+.box_main_blogpost{ /*förälder till h3, h6, bloggbildtext*/
     background-color: white;
     border-bottom: 1px solid;
     display: flex;
@@ -214,32 +218,32 @@ body{
     padding-left: 20px;
 }
 
-#bloggrubrik{
+.box_main_blogpost h3{
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#bywriter{
+.box_main_blogpost h6{
     padding: 0px;
     margin-top: 20px;
     text-decoration: underline;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.bloggbildtext{
+.in-box_main_pic-text{
     display: flex;
     flex-direction: row;
 }
-#bloggbild{
+#in-box_main_pic{
     width: 350px;
     height: 250px;
     margin-right: 20px;
 }
-#bloggtext{
+#in-box_main_text{
     width: 350px;
 }
-#bloggknapp{
+#in-box_main_btn{
     height: 33px;
     width: 90px;
     margin-left: 600px;
@@ -247,30 +251,26 @@ body{
     background-color: rgb(47, 194, 216);
     color: white;
     border: none;
-
     border-radius: 3px;
-    
-}
-#bloggknapp{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-size: 15px;
     box-shadow: 3px 3px 10px rgb(47, 194, 216);
 }
-#bloggknapp:hover{
+#in-box_main_btn:hover{
  cursor: pointer;
  
 }
-#bloggknapp:active {
+#in-box_main_btn:active {
     box-shadow: 0px 0px 1px 1px rgb(47, 194, 216); 
 }
-#older_post_box{
+.box_main_btn{
     height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#older_post_box button{
+.box_main_btn button{
     height: 35px;
     width: 150px;
     border: none;
@@ -282,7 +282,9 @@ body{
     font-size: 15px;
     box-shadow: 5px 5px 10px rgb(47, 194, 216);
 }
-.sidebar{
+
+
+.content_main_sidebar{
     position: sticky;
     top: 110px;
     bottom: 0px;
@@ -298,24 +300,22 @@ body{
     height: auto;
     max-height: 360px;
     box-shadow: 5px 5px 10px rgb(26, 47, 44);
-    
-    
 }
-.arkivbox{
+
+.box_main_archive{
     padding-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-   
     border-radius: 3px;
 }
-#arkivrubrik{
+.box_main_archive h3{
     margin-left: 25px;
     padding-left: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-#arkivlista{
+.in-box_main_list{
      list-style: none;
      margin-left: 0px;
      padding-left: 25px;
@@ -324,26 +324,26 @@ body{
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-#arkivlista li{
+/*
+.in-box_main_list li{
     
+}*/
 
-}
-.tagsbox{
+.box_main_tags{
     padding-top: 5px;
     margin-left: none;
-   
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     border-radius: 3px;
 
 }
-#tagsrubrik{
+.box_main_tags h3{
     margin-left: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-.tagslist{
+.in-box_main_tagslist{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -353,7 +353,7 @@ body{
     padding-left: 15px;
     background-color: (245, 219, 89);
 }
-.tagslist li{
+.in-box_main_tagslist li{
     padding-right: 6px;
 }
 
@@ -403,24 +403,27 @@ body{
     font-size: x-large;
     text-decoration: none;
 }
-
-#footer_slogan{
+/*
+.container_footer {
+display: flex;
+flex-direktion: column;
+} */
+.content_footer_tagslist{
+    background-color:  rgb(92, 116, 106);
+}
+.box_footer_tagslist{ /*ska ändras till en lista*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color:  rgb(92, 116, 106);
     margin-bottom: 0px;
     align-items: center;
-    justify-content: center;
-    margin-left: 0px;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 120px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
-#sammelsurium {
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-#footer_slogan a{
+.in-box_list a{ /* ska ersättas som ovan*/
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
@@ -432,13 +435,18 @@ body{
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
-#footer_slogan h2{
+#content_footer_tagslist h2{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
     text-align: center;  
+} 
+.content_footer_tagslist{
+    background-color:  rgb(92, 116, 106);
 }
-.footermain{
+/* allt ovan ska bort och bytas mot en lista*/
+
+.content_footer_branding-band{
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -446,6 +454,7 @@ body{
     justify-content: space-between;
     background-color: 
 }
+
 #footer_logo{
     height: 80px;
     width: 100px;
@@ -455,32 +464,34 @@ body{
 #logo:hover{
     cursor: pointer;
 }
-.copy_box{
+
+
+.box_footer_copy-text-icon{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.copy_box h5{
+.box_footer_copy-text-icon h5{
     padding-right: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#copy{
+#copy-icon{
     height: 15px;
 }
-.copy_box h4{
+.box_footer_copy-text-icon h4{
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-.footer_sm-bar{
+.box_footer_socialmedia-bar{
     display: flex;
     max-width: 60px;
     justify-content: space-between;
     justify-content: space-between;
     margin-right: 90px;    
 }
-.footer_sm-bar a{
+.box_footer_socialmedia-bar a{
     max-height: 60px;
     padding-right: 10px;
     
@@ -503,20 +514,19 @@ body{
 .fa-brands.fa-linkedin:hover{
     color:  rgb(92, 116, 106);
 }
-#footer_last_post{
-   display: flex;
+.content_footer_last-band{
+    display: flex;
     background-color: rgb(92, 116, 106);
     color: white;
     align-items: center;
     padding-left: 60px; 
-    /* Latestpost sectionen kan inte 
+}
+ /* Latestpost sectionen kan inte 
     ha margin då boxen ska gå
     hela vägen över. Bloggpost ligger 60px från left pga
     .content har margin-left 40px 
     och i den ligger.bloggposter
     med padding-left 20px.*/
-}
-
 /*
 #foot_ad{
     display: flex;

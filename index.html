@@ -9,8 +9,8 @@
     <title>Writers Block</title>
 </head>
 <body>
-    <header class="header"> <!--HEADER
-        <nav class="navbar">
+    <header class="container_header"> <!--HEADER
+        <nav class="content_navbar">
                 <ul id="menue">
                     <li><a href="#">HEM</a></li>
                     <li><a href="#">OM</a></li>
@@ -25,11 +25,11 @@
                     <a href="#">ARKIV</a>
                 </div>
             </div>
-        </nav> -->
-        <div class="headermain">
-            <a href="nyindex.html"><img id="logo" src="Wimages/lådlogotrehus.png"alt="logo"></a> <!--lägga en div runt?-->
+        </nav> --> <!--end .content_navbar-->
+        <div class="content_header">
+                <a href="nyindex.html"><img id="header_logo" src="Wimages/lådlogotrehus.png"alt="logo"></a> <!--lägga en div runt?-->
            
-            <div class="sm-bar">
+            <div class="box_header_socialmedia-bar">
                 <a href="https://facebook.com/">
                     <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
                 </a>
@@ -39,28 +39,30 @@
                 <a href="https://linkedin.com">
                     <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
                 </a>
-            </div>
-        </div>
-    </header> <!--HEADER END-->
+            </div> <!--end .box_header_socialmediabar-->
+        </div> <!--end .content_header"-->
 
-        <section id="slogan">
+    </header> <!--end .container_header-->
+
+        
+    <section class="container_main"> <!--CONTAINER-->
+
+        <section class="content_main_slogan">
             <h1>Writer´s Block </h1>
-                <h5>Klara färdiga skriv! Placera en fisk någonstans.</h5>
+            <h5>Klara färdiga skriv! Placera en fisk någonstans.</h5>
         </section>
-        <section id="latestpost">
+        <section class="content_main_latestpost">
             <h3>Latest posts:</h3>
         </section>
-    
 
-<section class="container"> <!--CONTAINER-->
-
-    <section class="content"> <!--CONTENT BOX-->
-       <article class="bloggposter">
-            <h3 id="bloggrubrik">Bloggpost 1</h3>
-            <h6 id="bywriter">by Karolina Mutiso Lundberg   date</h6>
-            <div class="bloggbildtext">
-                <img id="bloggbild" src="Wimages/8.jpg" alt="BILD">
-                <p id="bloggtext">
+        <section class="content_main_blogposts"> <!--CONTENT BOX-->
+            
+            <article class="box_main_blogpost">
+                <h3>Bloggpost 1</h3>
+                <h6>by Karolina Mutiso Lundberg   date</h6>
+                <div class="in-box_main_pic-text">
+                    <img id="in-box_main_pic" src="Wimages/8.jpg" alt="BILD">
+                    <p id="in-box_main_text">
                     I dikter betyder varje ord lite mer och de är finare 
                     med högre kvalité. <br>
                     Högtravande och uppblåsta sitter poeterna med sina höga hattar och tittar ner på alla de små människorna
@@ -71,135 +73,131 @@
                     De har svaret på livets mening och de vet varför varje blad
                     vänder sig i vinden och de vet allt vad de små människorna
                     tänker och vad de känner.
-                </p>
-            </div>
-            <button id="bloggknapp">Läs hela</button>
-        </article>
+                    </p>
+                </div>
+                <button id="in-box_main_btn">Läs hela</button>
+            </article>
 
-        <article class="bloggposter">
-            <h3 id="bloggrubrik">Bloggpost 2</h3>
-            <h6 id="bywriter">by Karolina Mutiso Lundberg   date</h6>
-            <div class="bloggbildtext">
-                <img id="bloggbild" src="Wimages/2.jpg" alt="BILD">
-                <p id="bloggtext">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Sapiente a doloremque ea iusto dolorum labore modi, corporis
-                vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
-                modi harum atque dignissimos.
-                </p>
-            </div>
-            <button id="bloggknapp">Läs hela</button>
-        </article>
+            <article class="box_main_blogpost">
+                <h3>Bloggpost 2</h3>
+                <h6>by Karolina Mutiso Lundberg   date</h6>
+                <div class="in-box_main_pic-text">
+                    <img id="in-box_main_pic" src="Wimages/2.jpg" alt="BILD">
+                    <p id="in-box_main_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Sapiente a doloremque ea iusto dolorum labore modi, corporis
+                    vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
+                    modi harum atque dignissimos.
+                    </p>
+                </div>
+                <button id="in-box_main_btn">Läs hela</button>
+            </article>
 
-        <article class="bloggposter">
-            <h3 id="bloggrubrik">Bloggpost 3</h3>
-            <h6 id="bywriter">by Karolina Mutiso Lundberg   date</h6>
-            <div class="bloggbildtext">
-                <img id="bloggbild" src="Wimages/3.jpg" alt="BILD">
-                <p id="bloggtext">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Sapiente a doloremque ea iusto dolorum labore modi, corporis
-                vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
-                modi harum atque dignissimos.
-                </p>
-            </div>
-            <button id="bloggknapp">Läs hela</button>
-        </article>
+            <article class="box_main_blogpost">
+                <h3>Bloggpost 3</h3>
+                <h6>by Karolina Mutiso Lundberg   date</h6>
+                <div class="in-box_main_pic-text">
+                    <img id="in-box_main_pic" src="Wimages/3.jpg" alt="BILD">
+                    <p id="in-box_main_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Sapiente a doloremque ea iusto dolorum labore modi, corporis
+                    vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
+                    modi harum atque dignissimos.
+                    </p>
+                </div>
+                <button id="in-box_main_btn">Läs hela</button>
+            </article>
 
-        <article class="bloggposter">
-            <h3 id="bloggrubrik">Bloggpost 4</h3>
-            <h6 id="bywriter">by Karolina Mutiso Lundberg date</h6>
-            <div class="bloggbildtext">
-                <img id="bloggbild" src="Wimages/4.jpg" alt="BILD">
-                <p id="bloggtext">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Sapiente a doloremque ea iusto dolorum labore modi, corporis
-                vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
-                modi harum atque dignissimos.
-                </p>
+            <article class="box_main_blogpost">
+                <h3>Bloggpost 4</h3>
+                <h6>by Karolina Mutiso Lundberg date</h6>
+                <div class="in-box_main_pic-text">
+                    <img id="in-box_main_pic" src="Wimages/4.jpg" alt="BILD">
+                    <p id="in-box_main_text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Sapiente a doloremque ea iusto dolorum labore modi, corporis
+                    vel quia veniam blanditiis amet rem ad repudiandae. Ipsam
+                    modi harum atque dignissimos.
+                    </p>
+                </div>
+                <button id="in-box_main_btn">Läs hela</button>
+            </article>
+
+            <div class="box_main_btn">
+                <button>Tidigare inlägg   ></button>
             </div>
-            <button id="bloggknapp">Läs hela</button>
-        </article>
-        <div id="older_post_box">
-            <button>Tidigare inlägg   ></button>
-        </div>
     
+        </section>. <!--end .content_main_blogposts"  -->
 
-    </section>. <!--CONTENT BOX END-->
+        <aside class="content_main_sidebar"> 
 
-    
-    <aside class="sidebar"> <!--SIDEBAR BOX-->
-        <div class="arkivbox">
-            <h3 id="arkivrubrik">Writer's Arkiv</h3>
-            <ul id="arkivlista">
-                <li>September</li>
-                <li>Augusti</li>
-                <li>Vår 2024</li>
-                <li>Höst 2023</li>
-        </div>
-        <div class="tagsbox">
-            <h3 id="tagsrubrik">Writer's Tags</h3>
-            <ul class="tagslist">
-                <li><a id="poesi" href="">poesi</a></li> 
-                <li><a id="abbie" href="">Abbie Emmons</a></li> 
-                <li><a id="hook" href="">Hook</a></li>
-                <li><a id="protagonist" href="">Protagonist</a></li>
-                <li><a id="three-act" href="">3-Act Structure</a></li>
-                <li><a id="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
-                <li><a id="scrivener" href="">Scrivener</a></li>
-                <li><a id="fumla" href="">Fumla</a></li> 
-            </ul>
-        </div>
-    </aside> <!--SIDEBAR BOX END-->
-</section> <!--CONTAINER END-->
+            <div class="box_main_archive">
+                <h3>Writer's Arkiv</h3>
+                <ul class="in-box_main_list">
+                    <li>September</li>
+                    <li>Augusti</li>
+                    <li>Vår 2024</li>
+                    <li>Höst 2023</li>
+                </ul>
+            </div>
 
-<!--
-    <footer class="footer">
+            <div class="box_main_tags">
+                <h3>Writer's Tags</h3>
+                <ul class="in-box_main_tagslist">
+                    <li><a id="poesi" href="">poesi</a></li> 
+                    <li><a id="abbie" href="">Abbie Emmons</a></li> 
+                    <li><a id="hook" href="">Hook</a></li>
+                    <li><a id="protagonist" href="">Protagonist</a></li>
+                    <li><a id="three-act" href="">3-Act Structure</a></li>
+                    <li><a id="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
+                    <li><a id="scrivener" href="">Scrivener</a></li>
+                    <li><a id="fumla" href="">Fumla</a></li> 
+                </ul>
+            </div>
 
-        <div id="foot_ad">
-            <h3>Build customer loyalty. Increase sales.</h3>
-            <h4>Free trial bla, bla, bla</h4>
-        </div>
-        <div>
+        </aside> <!--end .content_main_sidebar-->
 
-            4 listor? bara <a> och placerade i columner?
+    </section> <!--end .container_main-->
 
-        </div class="foot_bottom">
-            <div id="rights_box">
-            <h6>all rights reserved.</h6>
-        </div>
-            </div class=foot_sm-bar>
-            <div class="sm-bar">
-                <a href="https://facebook.com/">
-                    <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
-                </a>
-                <a href="https://instagram.com">
-                    <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
-                </a>
-                <a href="https://linkedin.com">
-                    <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
-                </a>
-            </div> 
-       
-        <h1>Writer's Block</h1>
-    </footer> -->
-    <footer class="footer"> 
 
-        <section id="footer_slogan">
-            <a href="#">Besök Writer's Blocks underbara sammelsuriumlåda.</a>
-                <h2>Hjärtligt välkommen!</h2>
+    <footer class="container_footer"> <!--start footer box-->
+
+        <section class="content_footer_tagslist"> 
+
+            <div class="box_footer_tagslist">
+                <ul class="in-box_list">
+                    <li><a id="poesi" href="">Poesi</a></li> 
+                    <li><a id="abbie" href="">Abbie Emmons</a></li> 
+                </ul>
+                <ul class="in-box_list">
+                    <li><a id="hook" href="">Hook</a></li>
+                    <li><a id="protagonist" href="">Protagonist</a></li>
+                </ul>
+                <ul class="in-box_list">
+                    <li><a id="three-act" href="">3-Act Structure</a></li>
+                    <li><a id="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
+                </ul>
+                <ul class="in-box_list">
+                    <li><a id="scrivener" href="">Scrivener</a></li>
+                    <li><a id="fumla" href="">Fumla</a></li> 
+                </ul>
+            </div>
+
         </section>
 
-        <div class="footermain">
+        <section class="content_footer_branding-band"> <!-- band = remsa-->
+
             <a href="nyindex.html"><img id="footer_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
-           <div class="copy_box">
-            <h5>Copyright</h5>
-            <img id="copy" src="Wimages/copyrightblack.png" alt="" srcset="">
-            <h5>2024</h5>
-            <h4>Writer's Block</h4>
-            <h5>Alla rättigheter förbehållna</h5>
-        </div>
-            <div class="footer_sm-bar">
+
+           <div class="box_footer_copy-text-icon">
+                <h5>Copyright</h5>
+                <img id="copy-icon" src="Wimages/copyrightblack.png" alt="" srcset="">
+                <h5>2024</h5>
+                <h4>Writer's Block</h4>
+                <h5>Alla rättigheter förbehållna</h5>
+           </div>
+
+            <div class="box_footer_socialmedia-bar">
                 <a href="https://facebook.com/">
                     <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
                 </a>
@@ -210,12 +208,15 @@
                     <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
                 </a>
             </div>
-        </div>
+
+        </section> <!--end .content_footer_branding-band-->
         
-        <section id="footer_last_post">
+        <section class="content_footer_last-band"> 
+            
             <h3></h3>
         </section>
-    </footer> <!--HEADER END-->
+
+    </footer> <!--end .container_footer-->
 
     
 </body>
