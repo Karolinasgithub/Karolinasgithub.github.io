@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <script src="https://kit.fontawesome.com/b053b00bce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bloggpost_style.css">
     <meta charset="UTF-8">
@@ -8,11 +9,12 @@
     <title>Bloggpost</title>
 </head>
 <body>
-    <header class="header"> 
-        <div class="headermain">
-            <a href="nyindex.html"><img id="logo" src="Wimages/lådlogotrehus.png"alt="logo"></a> 
+    <header class="container-b_header"> 
+
+        <div class="content-b_header">
+            <a href="nyindex.html"><img id="header-b_logo" src="Wimages/lådlogotrehus.png"alt="logo"></a> 
            
-            <div class="sm-bar">
+            <div class="box-b_header_socialmedia-bar">
                 <a href="https://facebook.com/">
                     <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
                 </a>
@@ -25,16 +27,16 @@
             </div>
         </div>
     </header> <!--HEADER END-->
-    <h3 id="welcome">Välkommen till Writer´s Block och ett sammelsurium av ord.</h3> 
-    <section class="container">
-                <!--section content i style.css-->
-        <article class="bloggpost">
-            <h3 id="bloggrubrik">Bloggpost 1</h3>
-            <h6 id="bywriter">by Karolina Mutiso Lundberg   date</h6>
-            <div class="bloggbildtext">
+    <!--
+    <h3 id="welcome-b">Välkommen till Writer´s Block och ett sammelsurium av ord.</h3> -->
 
-                <img id="bloggbild" src="Wimages/8.jpg" alt="BILD">
-
+    <section class="container-b_main">
+            
+        <article class="content-b_main_blogpost">
+            <h3>Bloggpost 1</h3>
+            <h6>by Karolina Mutiso Lundberg   date</h6>
+            <div class="box-b_main_blogpost">
+                <img id="in-box-b_main_pic" src="Wimages/8.jpg" alt="BILD">
                 <p>
                     I dikter betyder varje ord lite mer och de är finare 
                     med högre kvalité.
@@ -56,7 +58,7 @@
                     De är i kontakt med allt och de tar sig tid att göra det 
                     som ingen annan hinner. </p> 
 
-                    <img id="bloggbild_botten" src="Wimages/8.jpg" alt="BILD">
+                    <img id="in-box-b_main_pic-bottom" src="Wimages/8.jpg" alt="BILD">
 
                     <p>Poeterna tar sig själva på stort allvar.
                     De har svaret på livets mening och de vet varför varje blad
@@ -64,23 +66,25 @@
                     tänker och vad de känner.
                 </p>
                
-            </div>
-            <button id="bloggknapp">Läs hela</button>
-        </article>
+            </div> <!--end .box-b_main_blogpost-->
+            <button class="box-b_main_btn">Läs hela</button>
 
-        <aside class="sidebar"> <!--SIDEBAR BOX-->
-            <div class="arkivbox">
-                <h3 id="arkivrubrik">Writer's Arkiv</h3>
-                <ul id="arkivlista">
+        </article> <!--end .content-b_main_blogpost-->
+
+        <aside class="content-b_sidebar"> <!--SIDEBAR BOX-->
+            <div class="box-b_sidebar_archive">
+                <h3>Writer's Arkiv</h3>
+                <ul class="in-box-b_archive-list">
                     <li>September</li>
                     <li>Augusti</li>
                     <li>Vår 2024</li>
                     <li>Höst 2023</li>
                 </ul>
+            </div> <!--end .box-b_sidebar_archive-->
 
-            <div class="tagsbox">
-                <h3 id="tagsrubrik">Writer's Tags</h3>
-                <ul class="tagslist">
+            <div class="box-b_sidebar_tags">
+                <h3>Writer's Tags</h3>
+                <ul class="in-box-b_tags-list">
                     <li><a id="poesi" href="">Poesi</a></li> 
                     <li><a id="abbie" href="">Abbie Emmons</a></li> 
                     <li><a id="hook" href="">Hook</a></li>
@@ -90,18 +94,25 @@
                     <li><a id="scrivener" href="">Scrivener</a></li>
                     <li><a id="fumla" href="">Fumla</a></li> 
                 </ul>
-            </div> <!--end tagsbox-->
+            </div> <!--end box-b_sidebar_tags-->
 
-        </aside> <!--SIDEBAR BOX END-->
+            <form clas="box-b_search">
+                <div class="in-box-b_search">
+                    <span class="material-symbols-outlined">search</span>
+                    <input class="search-input" type="search" placeholder="Search">
+                </div>
+            </form>
 
-    </section> <!--End container @media  set to direction column-->
+        </aside> <!--end .content-b_sidebar-->
+
+    </section> <!--End .container-b_main (@media  set to direction column)-->
     
 
-    <footer class="footer"> 
+    <footer class="container-b_footer"> 
 
-        <div id="footer_remsa">
+        <div class="content-b_footer">
 
-            <section class="footer_list">
+            <section class="box-b_footer_tags-list">
                 <!--<a href="#">Besök Writer's Blocks underbara sammelsuriumlåda.</a>-->
                 <ul>
                     <li><a id="poesi" href="">Poesi</a></li> 
@@ -124,19 +135,19 @@
         </div> <!--End id="footer_remsa"-->
 
 
-        <div class="footermain">
+        <div class="content-b_footer_branding-band">
 
-            <a href="nyindex.html"><img id="footer_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
+            <a href="nyindex.html"><img id="footer-b_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
 
-            <div class="copy_box">
+            <div class="box-b_footer_copy-text-icon">
                 <h5>Copyright</h5>
-                <img id="copy" src="Wimages/copyrightblack.png" alt="" srcset="">
+                <img id="copy-b_icon" src="Wimages/copyrightblack.png" alt="" srcset="">
                 <h5>2024</h5>
                 <h4>Writer's Block</h4>
                 <h6>Alla rättigheter förbehållna</h6>
             </div> <!--end class=copy_box-->
 
-            <div class="footer_sm-bar">
+            <div class="box-b_footer_socialmedia-bar">
                 <a href="https://facebook.com/">
                 <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
                 </a>
@@ -151,7 +162,7 @@
         </div> <!--end class=footermain-->
                     
             
-        <section id="footer_last_post">
+        <section class="content-b_footer_last-band">
             <h3></h3>
         </section>
 

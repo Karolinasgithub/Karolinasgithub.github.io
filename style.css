@@ -99,7 +99,6 @@ body{
  }
  
 .content_header{
-   
     height: 105px;
     display: flex;
     flex-direction: row;
@@ -151,14 +150,11 @@ body{
 
 /* END HEADER*/
 
-/*START SECTION CONTAINER*/
 
-.container_main{ 
-    display: flex;
-    flex-direction: column;
-    
-}
-.content_main_slogan{
+
+/* content_slogan och content_lastpost har ingen container
+de befinner sig mellan container_header och container_main*/
+.content_slogan{
     display: flex;
     /*background-color: rgb(92, 116, 106);*/
     margin-top: 105px;
@@ -169,7 +165,7 @@ body{
     margin-left: 0px;
     
 }
-.content_main_slogan h1{
+.content_slogan h1{
    margin-top: 20px;
    margin-bottom: 0px;
    margin-left: 20px;
@@ -179,16 +175,14 @@ body{
    font-style: italic;
   
 }
-.content_main_slogan h5{
+.content_slogan h5{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    
 }
-.content_main_latestpost{
+.content_latestpost{
    display: flex;
     background-color:  rgb(26, 47, 44);
     color: white;
@@ -202,6 +196,14 @@ body{
     .content har margin-left 40px 
     och i den ligger.bloggposter
     med padding-left 20px.*/
+}
+
+
+/*START .container_main*/
+.container_main{ 
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .content_main_blogposts{ /*förälder till bloggposter*/
@@ -248,6 +250,7 @@ body{
     width: 90px;
     margin-left: 600px;
     margin-bottom: 20px;
+    
     background-color: rgb(47, 194, 216);
     color: white;
     border: none;
@@ -287,16 +290,13 @@ body{
 .content_main_sidebar{
     position: sticky;
     top: 110px;
-    bottom: 0px;
     border: 1px solid;
     border-radius: 8px;
-    
-    
     max-width: 280px;
     min-width: 200px;
+    margin-top: 30px;
     margin-left: auto;
-    margin-right: 30px;
-    margin-top: 20px;
+    margin-right: 35px; /*i mediaq auto/*/
     height: auto;
     max-height: 360px;
     box-shadow: 5px 5px 10px rgb(26, 47, 44);
@@ -441,7 +441,7 @@ flex-direktion: column;
     margin-left: 20px;
     text-align: center;  
 } 
-.content_footer_tagslist{
+.content_footer_tags-list{
     background-color:  rgb(92, 116, 106);
 }
 /* allt ovan ska bort och bytas mot en lista*/

@@ -10,6 +10,7 @@ blå husfärg rgb(47, 194, 216)
   body{
     margin: 0px;
 }
+*h3{}
  /*
 .navbar{
     display: flex;
@@ -90,7 +91,7 @@ blå husfärg rgb(47, 194, 216)
     margin-right: 10px;
 }
  */
- .header{
+ .container-b_header{
     position: sticky;
     top: 0px;
     left:0px;
@@ -98,7 +99,7 @@ blå husfärg rgb(47, 194, 216)
   
  }
  
-.headermain{
+.content-b_header{
    position:absolute;
    width: 100%;
     height: 105px;
@@ -110,25 +111,25 @@ blå husfärg rgb(47, 194, 216)
     background-size: cover;
     background-position: center;
 }
-#logo{
+#header-b_logo{
     height: 170px;
     width: 200px;
 }
-#logo:hover{
+#header-b_logo:hover{
     cursor: pointer;
 }
-.sm-bar{
+.box-b_header_socialmedia-bar{
     max-width: 60px;
     display: flex;
     justify-content: space-between;
     margin-right: 90px;    
 }
-.sm-bar a{
+.box-b_header_socialmedia-bar a{
     max-height: 60px;
     padding-right: 10px;
 }
 
-#welcome{
+#welcome-b{
     margin-top: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -213,12 +214,12 @@ blå husfärg rgb(47, 194, 216)
     flex-direction: column;
     margin-left: 40px;
 }  */
-.container{ /*förälder till (content) bloggpost och sidebar*/
+.container-b_main{ /*förälder till (content) bloggpost och sidebar*/
     display: flex;
     flex-direction: row;  /*column i iphone*/
   }
 
-.bloggpost{ /*förälder till h3, h6, bloggbildtext*/
+.content-b_main_blogpost{ /*förälder till h3, h6, bloggbildtext*/
     background-color: white;
     border-bottom: 1px solid;
     display: flex;
@@ -230,15 +231,16 @@ blå husfärg rgb(47, 194, 216)
     margin-bottom: 30px;
 }
 
-#bloggrubrik{
+.content-b_main_blogpost h3{
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#bywriter{
+.content-b_main_blogpost h6{
     padding: 0px;
     margin-top: 20px;
+    margin-bottom: 0px;
     text-decoration: underline;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -255,26 +257,27 @@ blå husfärg rgb(47, 194, 216)
 #bloggtext{
     width: 350px;
 } */
- .bloggbildtext{
+ .content-b_main_blogpost{
     margin-bottom: 30px;
 
  }
- #bloggbild{
+ #in-box-b_main_pic{
     float: left;
     margin-right: 20px;
     margin-top: 20px;
  }
-#bloggbild_botten{
+#in-box-b_main_pic-bottom{
     float: right;
     height: 150px;
     margin-left: 20px;
 }
-.bloggpost {
-    margin-top: 40px;
+.box-b_main_blogpost {
+    margin-top: 20px;
 }
-#bloggknapp{
+.box-b_main_btn{
     height: 33px;
     width: 90px;
+    margin-top: 30px;
     margin-left: 600px;
     margin-bottom: 20px;
     background-color: rgb(47, 194, 216);
@@ -284,19 +287,20 @@ blå husfärg rgb(47, 194, 216)
     border-radius: 3px;
     
 }
-#bloggknapp{
+.box-b_main_btn{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-size: 15px;
     box-shadow: 3px 3px 10px rgb(47, 194, 216);
 }
-#bloggknapp:hover{
+.box-b_main_btn:hover{
  cursor: pointer;
  
 }
-#bloggknapp:active {
+.box-b_main_btn:active {
     box-shadow: 0px 0px 1px 1px rgb(47, 194, 216); 
 }
+/*
 #older_post_box{
     height: 90px;
     display: flex;
@@ -314,8 +318,8 @@ blå husfärg rgb(47, 194, 216)
     font-weight: bolder;
     font-size: 15px;
     box-shadow: 5px 5px 10px rgb(47, 194, 216);
-}
-.sidebar{
+} */
+.content-b_sidebar{
     position: sticky;
     top: 180px;
     border: 1px solid;
@@ -331,7 +335,7 @@ blå husfärg rgb(47, 194, 216)
 }
 
 @media (max-width: 1200px) {
-    .container{
+    .container-b_main{
         display: flex;
         flex-wrap: wrap;
       align-items: center;
@@ -339,16 +343,16 @@ blå husfärg rgb(47, 194, 216)
         margin-right: 8px;
        
     }
-    .bloggpost{
+    .content-b_main_blogpost{
         margin-left: auto;
         margin-right: auto;
     }
-    #bloggbild{
+    .in-box-b_main_pic{
         display:none;
         
        
      }
-     #bloggbild_botten{
+     .in-box-b_main_pic-bottom{
        height: 150px;
        width: 250px;
        
@@ -356,23 +360,23 @@ blå husfärg rgb(47, 194, 216)
        
        margin-left: 0px;
      }
-     .bloggbildtext{
+     .box-b_main_blogpost{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
      }
-     .bloggbildtext p{
+     .box-b_main_blogpost p{
         margin-right: auto;
         margin-left: auto;
         display: flex;
         flex-wrap: wrap;
         min-width: none;
      }
-     #bloggknapp{
+     .box-b_main_btn{
         margin-left: auto;
 
      }
-    .sidebar{
+    .content-b_sidebar{
        margin-top: 20px;
        margin-bottom: 20px;
     margin-right: auto;
@@ -426,59 +430,66 @@ blå husfärg rgb(47, 194, 216)
 
    
 
-.arkivbox{
+.box-b_sidebar_archive{
     padding-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
    
     border-radius: 3px;
 }
-#arkivrubrik{
+.box-b_sidebar_archive h3{
+    margin-top: 10px;
+    margin-bottom: 0px;
     margin-left: 25px;
     padding-left: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-#arkivlista{
+.in-box-b_archive-list{
+    margin-top: 5px;
+    margin-bottom: 10px;
      list-style: none;
-     margin-left: 0px;
      padding-left: 25px;
      padding-bottom: 7px;
      text-decoration: underline;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-#arkivlista li{
+.in-box-b_archive-list li{
+
     
 
 }
-.tagsbox{
+.box-b_sidebar_tags{
     padding-top: 5px;
     margin-left: none;
-   
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     border-radius: 3px;
 
 }
-#tagsrubrik{
+.box-b_sidebar_tags h3{
     margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-.tagslist{
+.in-box-b_tags-list{
+    
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 0px;
     margin-right: 5px;
-    padding-left: 15px;
+    margin-top: 5px;
+    padding-left: 25px;
     background-color: (245, 219, 89);
 }
-.tagslist li{
+.in-box-b_tags-list li{
     padding-right: 6px;
 }
 
@@ -528,11 +539,30 @@ blå husfärg rgb(47, 194, 216)
     font-size: x-large;
     text-decoration: none;
 }
-#footer_remsa{
+
+.in-box-b_search{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 1px;
+    border-radius: 13px;
+    background-color: white;
+    
+}
+.search-input{
+    
+    border: none;
+    background: transparent;
+}
+
+.content-b_footer{
     background-color:  rgb(92, 116, 106);
 
 }
-.footer_list {
+.box-b_footer_tags-list {
     display: flex;
     flex-direction: row;
     background-color:  rgb(92, 116, 106);
@@ -570,7 +600,7 @@ blå husfärg rgb(47, 194, 216)
 
 
 
-.footermain{
+.content-b_footer_branding-band{
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -579,41 +609,41 @@ blå husfärg rgb(47, 194, 216)
     background-color: 
 }
 
-#footer_logo{
+#footer-b_logo{
     height: 80px;
     width: 100px;
     margin-left: 30px;
 
 }
-#logo:hover{
+#footer-b_logo:hover{
     cursor: pointer;
 }
-.copy_box{
+.box-b_footer_copy-text-icon{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.copy_box h5{
+.box-b_footer_copy-text-icon h5{
     padding-right: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#copy{
+#copy-b_icon{
     height: 15px;
 }
-.copy_box h4{
+.box-b_footer_copy-text-icon h4{
     padding-left: 3px;
     padding-right: 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-.footer_sm-bar{
+.box-b_footer_socialmedia-bar{
     display: flex;
     max-width: 60px;
     justify-content: space-between;
     justify-content: space-between;
     margin-right: 90px;    
 }
-.footer_sm-bar a{
+.box-b_footer_socialmedia-bar a{
     max-height: 60px;
     padding-right: 10px;
     
@@ -636,7 +666,7 @@ blå husfärg rgb(47, 194, 216)
 .fa-brands.fa-linkedin:hover{
     color:  rgb(92, 116, 106);
 }
-#footer_last_post{
+.content-b_footer_last-band{
    display: flex;
     background-color: rgb(92, 116, 106);
     color: white;
