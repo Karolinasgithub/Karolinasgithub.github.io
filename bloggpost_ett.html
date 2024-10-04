@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <script src="https://kit.fontawesome.com/b053b00bce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bloggpost_style.css">
@@ -12,7 +20,7 @@
     <header class="container-b_header"> 
 
         <div class="content-b_header">
-            <a href="nyindex.html"><img id="header-b_logo" src="Wimages/lådlogotrehus.png"alt="logo"></a> 
+            <a href="nyindex.html"><img class="header-b_logo" src="Wimages/lådlogotrehus.png"alt="logo"></a> 
            
             <div class="box-b_header_socialmedia-bar">
                 <a href="https://facebook.com/">
@@ -34,9 +42,9 @@
             
         <article class="content-b_main_blogpost">
             <h3>Bloggpost 1</h3>
-            <h6>by Karolina Mutiso Lundberg   date</h6>
+            <p class="byName_date">by Karolina Mutiso Lundberg   date</p>
             <div class="box-b_main_blogpost">
-                <img id="in-box-b_main_pic" src="Wimages/8.jpg" alt="BILD">
+                <img class="in-box-b_main_pic" src="Wimages/8.jpg" alt="BILD">
                 <p>
                     I dikter betyder varje ord lite mer och de är finare 
                     med högre kvalité.
@@ -58,7 +66,7 @@
                     De är i kontakt med allt och de tar sig tid att göra det 
                     som ingen annan hinner. </p> 
 
-                    <img id="in-box-b_main_pic-bottom" src="Wimages/8.jpg" alt="BILD">
+                    <img class="in-box-b_main_pic-bottom" src="Wimages/8.jpg" alt="BILD">
 
                     <p>Poeterna tar sig själva på stort allvar.
                     De har svaret på livets mening och de vet varför varje blad
@@ -68,6 +76,11 @@
                
             </div> <!--end .box-b_main_blogpost-->
             <button class="box-b_main_btn">Läs hela</button>
+
+            <div class="box-b_main_signing">
+                <p class="signing1">by company staff</p>
+                <p class="signing2">posted october 2024</p>
+            </div>
 
         </article> <!--end .content-b_main_blogpost-->
 
@@ -85,18 +98,18 @@
             <div class="box-b_sidebar_tags">
                 <h3>Writer's Tags</h3>
                 <ul class="in-box-b_tags-list">
-                    <li><a id="poesi" href="">Poesi</a></li> 
-                    <li><a id="abbie" href="">Abbie Emmons</a></li> 
-                    <li><a id="hook" href="">Hook</a></li>
-                    <li><a id="protagonist" href="">Protagonist</a></li>
-                    <li><a id="three-act" href="">3-Act Structure</a></li>
-                    <li><a id="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
-                    <li><a id="scrivener" href="">Scrivener</a></li>
-                    <li><a id="fumla" href="">Fumla</a></li> 
+                    <li><a class="poesi" href="">Poesi</a></li> 
+                    <li><a class="abbie" href="">Abbie Emmons</a></li> 
+                    <li><a class="hook" href="">Hook</a></li>
+                    <li><a class="protagonist" href="">Protagonist</a></li>
+                    <li><a class="three-act" href="">3-Act Structure</a></li>
+                    <li><a class="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
+                    <li><a class="scrivener" href="">Scrivener</a></li>
+                    <li><a class="fumla" href="">Fumla</a></li> 
                 </ul>
             </div> <!--end box-b_sidebar_tags-->
 
-            <form clas="box-b_search">
+            <form class="box-b_search">
                 <div class="in-box-b_search">
                     <span class="material-symbols-outlined">search</span>
                     <input class="search-input" type="search" placeholder="Search">
@@ -106,6 +119,47 @@
         </aside> <!--end .content-b_sidebar-->
 
     </section> <!--End .container-b_main (@media  set to direction column)-->
+
+    <section class="container-b_pre-footer">
+        
+        <div class="content-b_pre-footer_post-category">
+            <h6>Posted Under:</h6>
+            <a href="#">Category 1</a>
+            <a href="#">Category 2</a>
+            <a href="#">Category 3</a>
+            <a href="#">Category 4</a>
+        </div>
+
+        <div class="content-b_pre-footer_tags">
+            <h6>Tags:</h6>
+            <a href="#">Category 1</a></li>
+            <a href="#">Category 2</a></li>
+            <a href="#">Category 3</a></li>
+            <a href="#">Category 4</a></li>
+        </div>
+        
+        <div class="content-b_pre-footer_linktopost">
+            <h6>Link to this Post</h6>
+            <a href="#">Länk till sidan</a>
+        </div>
+
+        <div class="content-b_pre-footer_about-author">
+            <a href="nyindex.html"><img class="box-b_pre-footer_author-pic" src="Wimages/lådlogotrehus.png"alt="logo"></a> 
+           
+            <div class="box-b_pre-footer_socialmedia-bar">
+                <a href="https://facebook.com/">
+                    <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+                </a>
+            </div>
+
+
+    </section> <!--end .container-b_pre-footer-->
     
 
     <footer class="container-b_footer"> 
@@ -115,20 +169,20 @@
             <section class="box-b_footer_tags-list">
                 <!--<a href="#">Besök Writer's Blocks underbara sammelsuriumlåda.</a>-->
                 <ul>
-                    <li><a id="poesi" href="">Poesi</a></li> 
-                    <li><a id="abbie" href="">Abbie Emmons</a></li> 
+                    <li><a class="poesi" href="">Poesi</a></li> 
+                    <li><a class="abbie" href="">Abbie Emmons</a></li> 
                 </ul>
                 <ul>
-                    <li><a id="hook" href="">Hook</a></li>
-                    <li><a id="protagonist" href="">Protagonist</a></li>
+                    <li><a class="hook" href="">Hook</a></li>
+                    <li><a class="protagonist" href="">Protagonist</a></li>
                 </ul>
                 <ul>
-                    <li><a id="three-act" href="">3-Act Structure</a></li>
-                    <li><a id="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
+                    <li><a class="three-act" href="">3-Act Structure</a></li>
+                    <li><a class="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
                 </ul>
                 <ul>
-                    <li><a id="scrivener" href="">Scrivener</a></li>
-                    <li><a id="fumla" href="">Fumla</a></li> 
+                    <li><a class="scrivener" href="">Scrivener</a></li>
+                    <li><a class="fumla" href="">Fumla</a></li> 
                 </ul>
             </section> <!--end class="footer_list"-->
 
@@ -137,11 +191,11 @@
 
         <div class="content-b_footer_branding-band">
 
-            <a href="nyindex.html"><img id="footer-b_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
+            <a href="nyindex.html"><img class="footer-b_logo" src="Wimages/lådlogo.png"alt="logo"></a> <!--lägga en div runt?-->
 
             <div class="box-b_footer_copy-text-icon">
                 <h5>Copyright</h5>
-                <img id="copy-b_icon" src="Wimages/copyrightblack.png" alt="" srcset="">
+                <img class="copy-b_icon" src="Wimages/copyrightblack.png" alt="" srcset="">
                 <h5>2024</h5>
                 <h4>Writer's Block</h4>
                 <h6>Alla rättigheter förbehållna</h6>
