@@ -586,19 +586,76 @@ blå husfärg rgb(47, 194, 216)
     
 }
 .search-input{
-    
     border: none;
     background: transparent;
 }
 
-.container-b_pre-footer_post-category ul{
+/*PRE-FOOTER*/
+
+.container-b_pre-footer{
+    
+    background-color: white;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin-top: 120px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+.container-b_pre-footer div{ 
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-left: 0px;
     
-    
+  
+}
+.container-b_pre-footer h5{
+     margin-top: 0px;
+     margin-left: 0px;
+     padding-left: 0px;
+     margin-bottom: 16px;
+     font-family: ;
 }
 
-.content-b_pre-footer_
+.container-b_pre-footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.container-b_pre-footer a{
+    padding-right: 10px;
+    padding-bottom: 0px;
+    font-size: small;
+    font-family: ;
+}
+
+.content-b_pre-footer_linktopost{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-b_pre-footer_linktopost a{
+    margin-top: 0px;
+}
+
+.content-b_pre-footer_about-author{
+    border: 1px solid;
+    width: 751px;
+}
+.box-b_pre-footer_author-pic{
+    height: 60px;
+}
+
+/*FOOTER*/
+
 .content-b_footer{
     background-color:  rgb(92, 116, 106);
 
@@ -615,11 +672,7 @@ blå husfärg rgb(47, 194, 216)
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
-#sammelsurium {
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
+
 .footer_slogan a{
     text-decoration: none;
     font-size: 20px;
