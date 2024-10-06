@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b053b00bce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600..700&family=Schoolbell&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
@@ -16,12 +32,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloggpost</title>
 </head>
+
+
 <body>
     <header class="container-b_header"> 
 
         <div class="content-b_header">
-            <a href="nyindex.html"><img class="header-b_logo" src="Wimages/ladlogotrehus.png"alt="logo"></a> 
-           
+            <div class="header-logo-name">
+                <a href="nyindex.html"><img class="header-b_logo" src="Wimages/ladlogotrehus.png"alt="logo"></a> 
+            </div>
             <div class="box-b_header_socialmedia-bar">
                 <a href="https://facebook.com/">
                     <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
@@ -34,17 +53,33 @@
                 </a>
             </div>
         </div>
-    </header> <!--HEADER END-->
-    <!--
-    <h3 id="welcome-b">Välkommen till Writer´s Block och ett sammelsurium av ord.</h3> -->
+    </header> <!--end .container-b_header-->
+    
+
+
 
     <section class="container-b_main">
             
         <article class="content-b_main_blogpost">
-            <h3>Bloggpost 1</h3>
-            <p class="byName_date">by Karolina Mutiso Lundberg   date</p>
+            <h1>Bloggpost 1</h1>
+
+            <div class="box-b_main_name-socialmedia-bar">
+                <p class="byName_date">by Karolina Mutiso Lundberg   date</p>
+                <div class="box-b_main_socialmedia-bar">
+                    <a href="https://facebook.com/">
+                        <i class="fa-brands fa-square-facebook fa-xl" alt="Facebook"></i>
+                    </a>
+                    <a href="https://instagram.com">
+                        <i class="fa-brands fa-square-instagram fa-xl" alt="Instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin fa-xl" alt="LinkedIn"></i>
+                    </a>
+                </div>
+            </div>
+            
             <div class="box-b_main_blogpost">
-                <img class="in-box-b_main_pic" src="Wimages/ladlogotrehus.png" alt="BILD">
+                <img class="in-box-b_main_pic" src="Wimages/9.jpg" alt="BILD">
                 <p>
                     I dikter betyder varje ord lite mer och de är finare 
                     med högre kvalité.
@@ -66,7 +101,7 @@
                     De är i kontakt med allt och de tar sig tid att göra det 
                     som ingen annan hinner. </p> 
 
-                    <img class="in-box-b_main_pic-bottom" src="Wimages/ladlogotrehus.png" alt="BILD">
+                    <img class="in-box-b_main_pic-bottom" src="Wimages/tidningshog.png" alt="BILD">
 
                     <p>Poeterna tar sig själva på stort allvar.
                     De har svaret på livets mening och de vet varför varje blad
@@ -78,8 +113,8 @@
             <button class="box-b_main_btn">Läs hela</button>
 
             <div class="box-b_main_signing">
-                <p class="signing1">by company staff</p>
-                <p class="signing2">posted october 2024</p>
+                <p class="signing1">by Company Staff</p>
+                <p class="signing2">posted January 1, 2013</p>
             </div>
 
         </article> <!--end .content-b_main_blogpost-->
@@ -88,10 +123,10 @@
             <div class="box-b_sidebar_archive">
                 <h3>Writer's Arkiv</h3>
                 <ul class="in-box-b_archive-list">
-                    <li>September</li>
-                    <li>Augusti</li>
-                    <li>Vår 2024</li>
-                    <li>Höst 2023</li>
+                    <li><a href="#">September</a></li>
+                    <li><a href="#">Augusti</a></li>
+                    <li><a href="#">Vår 2024</a></li>
+                    <li><a href="#">Höst 2023</a></li>
                 </ul>
             </div> <!--end .box-b_sidebar_archive-->
 
@@ -147,23 +182,48 @@
             <a href="#">Länk till sidan</a>
         </section>
 
-        <div class="content-b_pre-footer_about-author">
-            <a href="nyindex.html"><img class="box-b_pre-footer_author-pic" src="Wimages/ladlogotrehus.png"alt="logo"></a> 
-           
-            <div class="box-b_pre-footer_socialmedia-bar">
-                <a href="https://facebook.com/">
-                    <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
-                </a>
-                <a href="https://instagram.com">
-                    <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
-                </a>
-                <a href="https://linkedin.com">
-                    <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
-                </a>
-            </div>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam placeat ea harum ratione sunt, magnam officiis suscipit quis culpa eligendi aut animi possimus repudiandae corrupti quas unde, ut consectetur.</p>
 
+
+
+        <section class="section1">
+                <div class="section1-box1">
+                    <a href="nyindex.html"><img class="box-b_pre-footer_author-pic" src="Wimages/ladlogotrehus.png"alt="logo"></a> 
+                    <h4>About the Author</h4>
+                </div>
+
+                <div class="section1-box2">
+                    <a href="">About Us</a>
+                    <a href="">Pricing</a>
+                     <a href="">Sign Up</a>
+                    <a href="">Contact Us</a>
+                </div>
+        </section>
+
+        <section class="section2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam placeat ea harum ratione sunt, magnam officiis suscipit quis culpa eligendi aut animi possimus repudiandae corrupti quas unde, ut consectetur.</p>
+        </section>
+
+        
+
+        <section class="section3">
+            <div class="section3-box1">
+                <h5>Previous Post:</h5>
+                <h5>Next Post:</h5>
+            </div>
+
+            <div class="section3-box2">
+                <a href="#">Hello World!!</a>
+                <a href="#">SEO-Friendly Blog Post Title >> </a>
+            </div>
+        </section>
+
+
+        <section class="content-b_pre-footer_bottom-ad">
+            <h1>Build Customer Loyalty.</h1>
+            <h1>Increase Sales.</h1>
+            <h5>Sign up today for your free trial to <span>XYZ Produkt</span>. No credit card required.</h5>
+
+        </section>
 
 
 
@@ -177,24 +237,31 @@
             <section class="box-b_footer_tags-list">
                 <!--<a href="#">Besök Writer's Blocks underbara sammelsuriumlåda.</a>-->
                 <ul>
-                    <li><a class="poesi" href="">Poesi</a></li> 
-                    <li><a class="abbie" href="">Abbie Emmons</a></li> 
+                    <li><a href="">About Us</a></li> 
+                    <li><a href="">Pricing</a></li> 
+                    <li><a href="">Sign Up</a></li> 
+                    <li><a href="">Contact Us</a></li> 
                 </ul>
                 <ul>
-                    <li><a class="hook" href="">Hook</a></li>
-                    <li><a class="protagonist" href="">Protagonist</a></li>
+                    <li><a href="">Your Customized App</a></li> 
+                    <li><a href="">CMS</a></li> 
+                    <li><a href="">Video</a></li> 
+                    <li><a href="">Analytics</a></li> 
                 </ul>
                 <ul>
-                    <li><a class="three-act" href="">3-Act Structure</a></li>
-                    <li><a class="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
+                    <li><a href="">Support</a></li> 
+                    <li><a href="">Legal</a></li> 
+                    <li><a href="">Careers</a></li> 
                 </ul>
                 <ul>
-                    <li><a class="scrivener" href="">Scrivener</a></li>
-                    <li><a class="fumla" href="">Fumla</a></li> 
+                    <li><a href="">Terms</a></li> 
+                    <li><a href="">Privacy</a></li> 
+                    <li><a href="">Sitemap</a></li> 
                 </ul>
+    
             </section> <!--end class="footer_list"-->
-
-        </div> <!--End id="footer_remsa"-->
+            <a class="box-b_footer_btn" href="">Back to top</a>
+        </div> <!--end .content-b_footer"-->
 
 
         <div class="content-b_footer_branding-band">
@@ -228,7 +295,7 @@
             <h3></h3>
         </section>
 
-    </footer> <!--HEADER END-->
+    </footer> 
 
 </body>
 </html>

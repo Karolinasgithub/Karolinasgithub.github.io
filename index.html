@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b053b00bce.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writers Block</title>
 </head>
 <body>
-    <header class="container_header"> <!--HEADER
-        <nav class="content_navbar">
-                <ul id="menue">
-                    <li><a href="#">HEM</a></li>
-                    <li><a href="#">OM</a></li>
-                    <li><a href="#">KONTAKT</a></li>
-                    <li><a href="#">ARKIV</a></li>
-                </ul>
-            <div class="dropdown">
-                <button>HEM</button> 
-                <div>
-                    <a href="#">OM OSS</a>
-                    <a href="#">KONTAKT</a>
-                    <a href="#">ARKIV</a>
-                </div>
-            </div>
-        </nav> --> <!--end .content_navbar-->
+    <header class="container_header"> 
+       
         <div class="content_header">
-                <a href="nyindex.html"><img id="header_logo" src="Wimages/ladlogotrehus.png"alt="logo"></a> <!--lägga en div runt?-->
-           
+            <div class="header-logo-name">
+                <a href="nyindex.html"><img class="header_logo" src="Wimages/ladlogotrehus.png"alt="logo"></a> 
+            </div>
             <div class="box_header_socialmedia-bar">
                 <a href="https://facebook.com/">
                     <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
@@ -39,29 +39,27 @@
                 <a href="https://linkedin.com">
                     <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
                 </a>
-            </div> <!--end .box_header_socialmediabar-->
-        </div> <!--end .content_header"-->
-
+            </div>
+        </div>
     </header> <!--end .container_header-->
-
-    <section class="content_slogan"> <!--Jag har fixat dessa så de ligger mellan två -->
-        <h1>Writer´s Block </h1>
-        <h5>Klara färdiga skriv! Placera en fisk någonstans.</h5>
-    </section>
-    <section class="content_latestpost">
-        <h3>Latest posts:</h3>
-    </section>
-
+     
+    <div class="writersblock">
+        <h1>Writer's Block</h1>
+        <h3>En blogg med & om ord <span> + för ord!</span></h3>
+    </div>
+    <div class="latestpost">
+        <h3>Senaste inlägget:</h3>
+    </div>
+    <section class="container_main"> 
         
-    <section class="container_main"> <!--CONTAINER-->
-
-        <section class="content_main_blogposts"> <!--CONTENT BOX-->
+        <section class="content_main_blogposts">
             
             <article class="box_main_blogpost">
                 <h3>Bloggpost 1</h3>
                 <h6>by Karolina Mutiso Lundberg   date</h6>
+
                 <div class="in-box_main_pic-text">
-                    <img id="in-box_main_pic" src="Wimages/8.jpg" alt="BILD">
+                    <img id="in-box_main_pic" src="Wimages/9.jpg" alt="BILD">
                     <p id="in-box_main_text">
                     I dikter betyder varje ord lite mer och de är finare 
                     med högre kvalité. <br>
@@ -112,7 +110,7 @@
                 <h3>Bloggpost 4</h3>
                 <h6>by Karolina Mutiso Lundberg date</h6>
                 <div class="in-box_main_pic-text">
-                    <img id="in-box_main_pic" src="Wimages/4.jpg" alt="BILD">
+                    <img id="in-box_main_pic" src="Wimages/folderlada.png" alt="BILD">
                     <p id="in-box_main_text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Sapiente a doloremque ea iusto dolorum labore modi, corporis
@@ -160,64 +158,70 @@
     </section> <!--end .container_main-->
 
 
-    <footer class="container_footer"> <!--start footer box-->
+    <footer class="container_footer"> 
 
-        <section class="content_footer_tagslist"> 
+        <div class="content_footer">
 
-            <div class="box_footer_tagslist">
-                <ul class="in-box_list">
-                    <li><a id="poesi" href="">Poesi</a></li> 
-                    <li><a id="abbie" href="">Abbie Emmons</a></li> 
+            <section class="box_footer_tags-list">
+                <ul>
+                    <li><a href="">About Us</a></li> 
+                    <li><a href="">Pricing</a></li> 
+                    <li><a href="">Sign Up</a></li> 
+                    <li><a href="">Contact Us</a></li> 
                 </ul>
-                <ul class="in-box_list">
-                    <li><a id="hook" href="">Hook</a></li>
-                    <li><a id="protagonist" href="">Protagonist</a></li>
+                <ul>
+                    <li><a href="">Your Customized App</a></li> 
+                    <li><a href="">CMS</a></li> 
+                    <li><a href="">Video</a></li> 
+                    <li><a href="">Analytics</a></li> 
                 </ul>
-                <ul class="in-box_list">
-                    <li><a id="three-act" href="">3-Act Structure</a></li>
-                    <li><a id="linnéuniversitetet" href="">Linnéuniversitetet</a></li>
+                <ul>
+                    <li><a href="">Support</a></li> 
+                    <li><a href="">Legal</a></li> 
+                    <li><a href="">Careers</a></li> 
                 </ul>
-                <ul class="in-box_list">
-                    <li><a id="scrivener" href="">Scrivener</a></li>
-                    <li><a id="fumla" href="">Fumla</a></li> 
+                <ul>
+                    <li><a href="">Terms</a></li> 
+                    <li><a href="">Privacy</a></li> 
+                    <li><a href="">Sitemap</a></li> 
                 </ul>
-            </div>
+    
+            </section> <!--end class="footer_list"-->
 
-        </section> <!--end .content_footer_tagslist-->
+            <a class="box_footer_btn" href="">Back to top</a>
 
-        <section class="content_footer_branding-band"> <!-- band = remsa-->
+        </div> <!--end .content-b_footer"-->
 
-            <a href="nyindex.html"><img id="footer_logo" src="Wimages/ladlogotrehus.png"alt="logo"></a> <!--lägga en div runt?-->
 
-           <div class="box_footer_copy-text-icon">
+        <div class="content_footer_branding-band">
+
+            <a href="nyindex.html"><img class="footer_logo" src="Wimages/ladlogotrehus.png"alt="logo"></a> <!--lägga en div runt?-->
+
+            <div class="box_footer_copy-text-icon">
                 <h5>Copyright</h5>
-                <img id="copy-icon" src="Wimages/copyrightblack.png" alt="" srcset="">
+                <img class="copy_icon" src="Wimages/copyrightblack.png" alt="" srcset="">
                 <h5>2024</h5>
                 <h4>Writer's Block</h4>
-                <h5>Alla rättigheter förbehållna</h5>
-           </div>
+                <h6>Alla rättigheter förbehållna</h6>
+            </div> <!--end class=copy_box-->
 
             <div class="box_footer_socialmedia-bar">
                 <a href="https://facebook.com/">
-                    <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
+                <i class="fa-brands fa-square-facebook fa-2xl" alt="Facebook"></i>
                 </a>
                 <a href="https://instagram.com">
-                    <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
+                <i class="fa-brands fa-square-instagram fa-2xl" alt="Instagram"></i>
                 </a>
                 <a href="https://linkedin.com">
-                    <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+                <i class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
                 </a>
-            </div>
+            </div> <!--end class=footer_sm-bar-->
 
-        </section> <!--end .content_footer_branding-band-->
-        
-        <section class="content_footer_last-band"> 
-            
+        </div> <!--end class=footermain-->
+    
+        <section class="content_footer_last-band">
             <h3></h3>
         </section>
-
-    </footer> <!--end .container_footer-->
-
     
 </body>
 </html>

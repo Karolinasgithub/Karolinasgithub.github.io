@@ -1,3 +1,20 @@
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.reenie-beanie-regular {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .bellefair-regular {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
 /* Färgpalett
 huvudfärg (mörk) rgb(26, 47, 44). rosa rgb(250, 212, 235).  ljus rgb(255, 255, 255).   mörk rgb(53, 69, 74) 
 Facebook org color  #0866ff
@@ -96,24 +113,36 @@ blå husfärg rgb(47, 194, 216)
     top: 0px;
     left:0px;
     right: 0px;
-  
+    background-color: white;
  }
  
 .content-b_header{
    position:absolute;
-   width: 100%;
-    height: 105px;
+   border-bottom: 2px solid rgb(199, 210, 215);
+   width: 95%;
+   margin-right: 30px;
+   margin-left: 30px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-image:url(Wimages/blog.png);
+    background-color: white;
+    /*background-image:url(Wimages/blog.png);*/
     background-size: cover;
     background-position: center;
+    
 }
+.header-logo-name{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+
+}
+
 .header-b_logo{
-    height: 170px;
-    width: 200px;
+    height: 90px;
+    width: 120px;
 }
 .header-b_logo:hover{
     cursor: pointer;
@@ -122,98 +151,23 @@ blå husfärg rgb(47, 194, 216)
     max-width: 60px;
     display: flex;
     justify-content: space-between;
-    margin-right: 90px;    
+    margin-right: 60px;    
 }
 .box-b_header_socialmedia-bar a{
     max-height: 60px;
     padding-right: 10px;
 }
 /*
-.welcome-b{
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(26, 47, 44);
-} finns på hemsidan men inte blogsidan*/
-/*
-.fa-brands.fa-square-facebook{
-    color: rgb(26, 47, 44);
-}
-.fa-brands.fa-square-facebook:hover{
-    color:  rgb(92, 116, 106);
-}
-.fa-brands.fa-square-instagram{
-    color: rgb(26, 47, 44);
-}
-.fa-brands.fa-square-instagram:hover{
-    color:  rgb(92, 116, 106);
-}
-.fa-brands.fa-linkedin {
-    color: rgb(26, 47, 44);
-}
-.fa-brands.fa-linkedin:hover{
-    color:  rgb(92, 116, 106);
-}
-   
-#slogan{
-    display: flex;
-    /*background-color: rgb(92, 116, 106);
-    margin-top: 105px;
-    margin-bottom: 0px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.content-b_header p{
     margin-left: 0px;
-    
-}
-#slogan h1{
-   margin-top: 20px;
-   margin-bottom: 0px;
-   margin-left: 20px;
-   padding-bottom: 0px;
-   text-align: center;
-   color: black;
-   font-style: italic;
-  
-}
-#slogan h5{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    
-}
-#latestpost{
-   display: flex;
-    background-color:  rgb(26, 47, 44);
-    color: white;
-    align-items: center;
-    padding-left: 60px; 
-    height: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* Latestpost sectionen kan inte 
-    ha margin då boxen ska gå
-    hela vägen över. Bloggpost ligger 60px från left pga
-    .content har margin-left 40px 
-    och i den ligger.bloggposter
-    med padding-left 20px.
-}
- END HEADER
+    padding-left: 0px;
+    font-family: 'Schoolbell';
+    font-size: 60px;
+}*/
 
-/*START SECTION CONTAINER
 
-.container förälder till content och sidebar
-    display: flex;
-    flex-direction: row;
-    
-}
-.content{ /*förälder till bloggposter
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-}  */
+
+
 .container-b_main{ /*förälder till (content) bloggpost och sidebar*/
     display: flex;
     flex-direction: row;  /*column i iphone*/
@@ -231,39 +185,35 @@ blå husfärg rgb(47, 194, 216)
     margin-bottom: 30px;
 }
 
-.byName_date{
-    padding: 0px;
-    margin-top: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-family: 'Schoolbell';
-}
-.content-b_main_blogpost h6{
-    padding: 0px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-/*
-.bloggbildtext{
+.box-b_main_name-socialmedia-bar{
     display: flex;
     flex-direction: row;
+   justify-content: space-between;
+   align-items: end;
 }
-#bloggbild{
-    width: 350px;
-    height: 250px;
-    margin-right: 20px;
+
+.byName_date{
+    margin-top: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+   
+    
 }
-#bloggtext{
-    width: 350px;
-} */
+.box-b_main_socialmedia-bar{
+    padding-bottom: 5px;
+}
+.box-b_main_socialmedia-bar i{
+   
+}
+.box-b_main_socialmedia-bar a{
+    text-decoration: none;
+    
+}
  .content-b_main_blogpost{
     margin-bottom: 30px;
     padding-left: 0px;
     padding-bottom: 0px;
-   
-
  }
  .in-box-b_main_pic{
     float: left;
@@ -285,25 +235,21 @@ blå husfärg rgb(47, 194, 216)
     margin-top: 30px;
     margin-left: 600px;
     margin-bottom: 20px;
-    background-color: rgb(47, 194, 216);
+    background-color: rgb(128, 147, 157);
     color: white;
     border: none;
-
     border-radius: 3px;
-    
+    font-family: 'Times New Roman', Times, serif;
 }
 .box-b_main_btn{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
     font-size: 15px;
-    box-shadow: 3px 3px 10px rgb(47, 194, 216);
+    box-shadow: 1px 1px 9px -3px rgb(128, 147, 157);
 }
 .box-b_main_btn:hover{
  cursor: pointer;
- 
 }
 .box-b_main_btn:active {
-    box-shadow: 0px 0px 1px 1px rgb(47, 194, 216); 
+    box-shadow: 0px 1px 1px rgb(95, 98, 98);
 }
 .box-b_main_signing{
     display: flex;
@@ -331,31 +277,12 @@ blå husfärg rgb(47, 194, 216)
     width: max-content;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    margin-right: 100px;
 }
 
-/*
-#older_post_box{
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#older_post_box button{
-    height: 35px;
-    width: 150px;
-    border: none;
-    border-radius: 3px;
-    background-color: rgb(47, 194, 216);
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    font-size: 15px;
-    box-shadow: 5px 5px 10px rgb(47, 194, 216);
-} */
 .content-b_sidebar{
-    /*position: sticky;*/
     top: 180px;
-    border: 1px solid;
+    border: 1px solid rgb(95, 98, 98);
     border-radius: 8px;
     max-width: 280px;
     min-width: 200px;
@@ -364,7 +291,7 @@ blå husfärg rgb(47, 194, 216)
     margin-right: 35px; /*i mediaq auto/*/
     height: auto;
     max-height: 360px;
-    box-shadow: 5px 5px 10px rgb(26, 47, 44); 
+    box-shadow: 5px 5px 10px rgb(95, 98, 98); 
 }
 
 @media (max-width: 1200px) {
@@ -382,15 +309,10 @@ blå husfärg rgb(47, 194, 216)
     }
     .in-box-b_main_pic{
         display:none;
-        
-       
      }
      .in-box-b_main_pic-bottom{
        height: 150px;
        width: 250px;
-       
-
-       
        margin-left: 0px;
      }
      .box-b_main_blogpost{
@@ -423,10 +345,6 @@ blå husfärg rgb(47, 194, 216)
     }
 
     .footermain{
-        
-       
-    }
-    .footermain{
         padding-left: 0px;
     }
     .footer_logo{
@@ -434,7 +352,6 @@ blå husfärg rgb(47, 194, 216)
         width: 80px;
         margin-left: 0px;
         padding-left: 0px;
-    
     }
     .copy_box{
         display: flex;
@@ -443,7 +360,6 @@ blå husfärg rgb(47, 194, 216)
     .copy_box h5{
         font-size: 8px;
         padding-right: 10px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .copy_box h6{
         display:none;
@@ -456,8 +372,6 @@ blå husfärg rgb(47, 194, 216)
         font-size: ;
         padding-left: 3px;
         padding-right: 3px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
     }
 }
 
@@ -477,7 +391,7 @@ blå husfärg rgb(47, 194, 216)
     margin-bottom: 0px;
     margin-left: 25px;
     padding-left: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 
 }
 .in-box-b_archive-list{
@@ -487,7 +401,7 @@ blå husfärg rgb(47, 194, 216)
      padding-left: 25px;
      padding-bottom: 7px;
      text-decoration: underline;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
 
 }
 .in-box-b_archive-list li{
@@ -508,7 +422,7 @@ blå husfärg rgb(47, 194, 216)
     margin-left: 25px;
     margin-top: 5px;
     margin-bottom: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 
 }
 .in-box-b_tags-list{
@@ -520,12 +434,15 @@ blå husfärg rgb(47, 194, 216)
     margin-right: 5px;
     margin-top: 5px;
     padding-left: 25px;
-    background-color: (245, 219, 89);
+    
 }
 .in-box-b_tags-list li{
     padding-right: 6px;
 }
-
+.in-box-b_tags-list a{ 
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
 .poesi{
     font-size: large;
     color: blueviolet;
@@ -595,13 +512,13 @@ blå husfärg rgb(47, 194, 216)
 .container-b_pre-footer{
     
     background-color: white;
-    border-bottom: 1px solid;
     display: flex;
     flex-direction: column;
     max-width: 800px;
     margin-top: 120px;
     margin-left: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+   
 }
 .container-b_pre-footer div{ 
     display: flex;
@@ -615,7 +532,7 @@ blå husfärg rgb(47, 194, 216)
      margin-top: 0px;
      margin-left: 0px;
      padding-left: 0px;
-     margin-bottom: 16px;
+     margin-bottom: 15px;
      font-family: ;
 }
 
@@ -632,7 +549,6 @@ blå husfärg rgb(47, 194, 216)
 
 .container-b_pre-footer a{
     padding-right: 10px;
-    padding-bottom: 0px;
     font-size: small;
     font-family: ;
 }
@@ -640,64 +556,143 @@ blå husfärg rgb(47, 194, 216)
 .content-b_pre-footer_linktopost{
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
+    
+    
 }
 
-.content-b_pre-footer_linktopost a{
-    margin-top: 0px;
-}
 
-.content-b_pre-footer_about-author{
+
+.section1{
     border: 1px solid;
-    width: 751px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 .box-b_pre-footer_author-pic{
     height: 60px;
+}
+.section2{
+ border-bottom: 1px solid;
+ border-left: 1px solid;
+ border-right: 1px solid;
+  
+}
+.section2 p{
+    padding-left: 8px;
+}
+.section3{
+    margin-top: 10px;
+}
+.section3-box1 {
+    margin-bottom: 0px;
+    
+}
+.section3-box1 h5{
+    padding-left: 8px;
+    margin-right:250px;
+    margin-bottom: 10px;
+}
+.section3-box2 a{
+    padding-left: 8px;
+    padding-top: 0px;
+    margin-right: 250px;
+    
+}
+/*
+.content-b_pre-footer_about-author{
+    display: flex;
+    flex-direction:;
+    justify-content: space-between;
+    border: 1px solid;
+    width: 751px;
+    margin-top: 16px;
+}
+
+.box-b_pre-footer_author-pic{
+    height: 60px;
+}
+.aboutAuthorSearch a{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.content-b_pre-footer_par{ 
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    width: 751px;
+}
+.content-b_pre-footer_par p{
+    padding-left: 8px;
+}
+.content-b_pre-footer_last {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 751px;
+}
+.content-b_pre-footer_last div{
+display: flex;
+flex-direction: column;
+}
+.content-b_pre-footer_last h5{
+    margin-bottom: 10px;
+} */
+
+
+.content-b_pre-footer_bottom-ad{
+    border-top: 1px solid;
+    margin-top: 40px;
+    margin-right: 15px;
+    width: 1000px;
+
+    
+}
+.content-b_pre-footer_bottom-ad h1{
+   font-size: xx-large;
+   font-weight: normal;
+   margin-top: 20px;
+   margin-bottom: 1px;
+
+}
+.content-b_pre-footer_bottom-ad h5{
+    margin-top: 10px;
+}
+.content-b_pre-footer_bottom-ad span{
+    font-style: italic;
 }
 
 /*FOOTER*/
 
 .content-b_footer{
-    background-color:  rgb(92, 116, 106);
-
+    background-color:  rgb(128, 147, 157);
+    height: 120px;
 }
 .box-b_footer_tags-list {
     display: flex;
     flex-direction: row;
-    background-color:  rgb(92, 116, 106);
+    background-color: rgb(128, 147, 157);
     margin-bottom: 0px;
     align-items: center;
     justify-content: space-around;
     margin-left: 15px;
-    margin-right: 120px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-right: 15px;
     
 }
-
-.footer_slogan a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-   margin-top: 20px;
-   margin-bottom: 0px;
-   margin-left: 20px;
-   text-align: center;
-   color: rgb(244, 116, 145);
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+.box-b_footer_tags-list ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
 }
-.footer_slogan h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    text-align: center;  
-}
-
-.box-b_main_signing{
-    display: flex;
-    flex-direction: row;
-    
-    
-    
+.box-b_footer_btn{
+   margin-left: 1150px;
+   border: none;
+   margin-top: 0px;
+   padding-top: 0px;
+   margin-bottom: 20px;
 }
 
 .content-b_footer_branding-band{
@@ -706,14 +701,12 @@ blå husfärg rgb(47, 194, 216)
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: 
 }
 
 .footer-b_logo{
     height: 80px;
     width: 100px;
     margin-left: 30px;
-
 }
 .footer-b_logo:hover{
     cursor: pointer;
@@ -725,15 +718,16 @@ blå husfärg rgb(47, 194, 216)
 }
 .box-b_footer_copy-text-icon h5{
     padding-right: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+   
+    
 .copy-b_icon{
     height: 15px;
 }
 .box-b_footer_copy-text-icon h4{
     padding-left: 3px;
     padding-right: 3px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 
 }
 .box-b_footer_socialmedia-bar{
@@ -768,7 +762,7 @@ blå husfärg rgb(47, 194, 216)
 }
 .content-b_footer_last-band{
    display: flex;
-    background-color: rgb(92, 116, 106);
+    background-color: rgb(128, 147, 157);
     color: white;
     align-items: center;
     padding-left: 60px; 
@@ -780,6 +774,15 @@ blå husfärg rgb(47, 194, 216)
     med padding-left 20px.*/
 }
 
+.box-b_main_socialmedia-bar .fa-brands.fa-square-facebook {
+    color: rgb(128, 147, 157);
+}
+.box-b_main_socialmedia-bar .fa-brands.fa-square-instagram {
+    color: rgb(128, 147, 157);
+}
+.box-b_main_socialmedia-bar .fa-brands.fa-linkedin {
+    color: rgb(128, 147, 157);
+}
 /*
 #foot_ad{
     display: flex;

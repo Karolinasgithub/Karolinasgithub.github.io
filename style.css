@@ -6,6 +6,8 @@ linkdin org color #004182
 blå husfärg rgb(47, 194, 216)
   mörk gul rgb(223, 197, 63)
   ljus gul rgb(245, 219, 89)*/
+
+  rgb(128, 147, 157)
   
 
 body{
@@ -90,7 +92,7 @@ body{
 #inputbox{
     margin-right: 10px;
 }
- */
+ 
  .container_header{
     position: fixed;
     top: 0px;
@@ -125,7 +127,7 @@ body{
     max-height: 60px;
     padding-right: 10px;
 }
-/* sparar lite för om jag vill
+sparar lite för om jag vill
  ha en annan färg i headernn än i footern
 
 .fa-brands.fa-square-facebook{
@@ -149,56 +151,84 @@ body{
     */
 
 /* END HEADER*/
+.container_header{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    background-color: white;
 
-
-
-/* content_slogan och content_lastpost har ingen container
-de befinner sig mellan container_header och container_main*/
-.content_slogan{
+ }
+ 
+.content_header{
+   position:absolute;
+   border-bottom: 2px solid rgb(199, 210, 215);
+   width: 95%;
+   margin-right: 30px;
+   margin-left: 30px;
+    height: 60px;
     display: flex;
-    /*background-color: rgb(92, 116, 106);*/
-    margin-top: 105px;
-    margin-bottom: 0px;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 0px;
+    justify-content: space-between;
+    background-color: white;
+    /*background-image:url(Wimages/blog.png);*/
+    background-size: cover;
+    background-position: center;
     
 }
-.content_slogan h1{
-   margin-top: 20px;
-   margin-bottom: 0px;
-   margin-left: 20px;
-   padding-bottom: 0px;
-   text-align: center;
-   color: black;
-   font-style: italic;
-  
-}
-.content_slogan h5{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.content_latestpost{
-   display: flex;
-    background-color:  rgb(26, 47, 44);
-    color: white;
+.header-logo-name{
+    display: flex;
+    flex-direction:row;
     align-items: center;
-    padding-left: 60px; 
-    height: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* Latestpost sectionen kan inte 
-    ha margin då boxen ska gå
-    hela vägen över. Bloggpost ligger 60px från left pga
-    .content har margin-left 40px 
-    och i den ligger.bloggposter
-    med padding-left 20px.*/
 }
 
+.header_logo{
+    height: 90px;
+    width: 120px;
+}
+.header_logo:hover{
+    cursor: pointer;
+}
+.box_header_socialmedia-bar{
+    max-width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;    
+}
+.box_header_socialmedia-bar a{
+    max-height: 60px;
+    padding-right: 10px;
+}
 
+.writersblock h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: 'Schoolbell';
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.writersblock h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.writersblock span{
+    font-family: 'Schoolbell';
+}
+.latestpost{
+    display: flex;
+    height: 40px;
+    background-color: rgb(199, 210, 215);
+    align-items: center;
+
+}
+.latestpost h3{
+    margin-left: 30px;
+   
+    
+}
 /*START .container_main*/
 .container_main{ 
     display: flex;
@@ -224,13 +254,13 @@ de befinner sig mellan container_header och container_main*/
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .box_main_blogpost h6{
     padding: 0px;
     margin-top: 20px;
     text-decoration: underline;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 }
 
 .in-box_main_pic-text{
@@ -251,21 +281,22 @@ de befinner sig mellan container_header och container_main*/
     margin-left: 600px;
     margin-bottom: 20px;
     
-    background-color: rgb(47, 194, 216);
+    background-color:  rgb(128, 147, 157);
     color: white;
     border: none;
     border-radius: 3px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
+   
+   font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
-    box-shadow: 3px 3px 10px rgb(47, 194, 216);
+    font-size: 15px;
+    box-shadow: 1px 1px 9px -3px rgb(95, 98, 98);
 }
 #in-box_main_btn:hover{
  cursor: pointer;
  
 }
 #in-box_main_btn:active {
-    box-shadow: 0px 0px 1px 1px rgb(47, 194, 216); 
+    box-shadow: 0px 1px 1px rgb(71, 73, 73); 
 }
 .box_main_btn{
     height: 90px;
@@ -278,9 +309,9 @@ de befinner sig mellan container_header och container_main*/
     width: 150px;
     border: none;
     border-radius: 3px;
-    background-color: rgb(47, 194, 216);
+    background-color:  rgb(128, 147, 157);
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     font-weight: bolder;
     font-size: 15px;
     box-shadow: 5px 5px 10px rgb(47, 194, 216);
@@ -312,7 +343,7 @@ de befinner sig mellan container_header och container_main*/
 .box_main_archive h3{
     margin-left: 25px;
     padding-left: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
 
 }
 .in-box_main_list{
@@ -321,7 +352,7 @@ de befinner sig mellan container_header och container_main*/
      padding-left: 25px;
      padding-bottom: 7px;
      text-decoration: underline;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 
 }
 /*
@@ -340,8 +371,7 @@ de befinner sig mellan container_header och container_main*/
 }
 .box_main_tags h3{
     margin-left: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    
 }
 .in-box_main_tagslist{
     list-style: none;
@@ -351,7 +381,7 @@ de befinner sig mellan container_header och container_main*/
     margin-left: 0px;
     margin-right: 5px;
     padding-left: 15px;
-    background-color: (245, 219, 89);
+   
 }
 .in-box_main_tagslist li{
     padding-right: 6px;
@@ -408,43 +438,33 @@ de befinner sig mellan container_header och container_main*/
 display: flex;
 flex-direktion: column;
 } */
-.content_footer_tagslist{
-    background-color:  rgb(92, 116, 106);
+.content_footer{
+    background-color:  rgb(128, 147, 157);
+    height: 120px;
 }
-.box_footer_tagslist{ /*ska ändras till en lista*/
+.box_footer_tags-list {
     display: flex;
     flex-direction: row;
-    background-color:  rgb(92, 116, 106);
+    background-color: rgb(128, 147, 157);
     margin-bottom: 0px;
     align-items: center;
     justify-content: space-around;
     margin-left: 15px;
-    margin-right: 120px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-right: 15px;
     
 }
-.in-box_list a{ /* ska ersättas som ovan*/
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-   margin-top: 20px;
-   margin-bottom: 0px;
-   margin-left: 20px;
-   text-align: center;
-   color: rgb(244, 116, 145);
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+.box_footer_tags-list ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
 }
-#content_footer_tagslist h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    text-align: center;  
-} 
-.content_footer_tags-list{
-    background-color:  rgb(92, 116, 106);
+.box_footer_btn{
+   margin-left: 1150px;
+   border: none;
+   margin-top: 0px;
+   padding-top: 0px;
+   margin-bottom: 20px;
 }
-/* allt ovan ska bort och bytas mot en lista*/
 
 .content_footer_branding-band{
     height: 60px;
@@ -452,20 +472,16 @@ flex-direktion: column;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: 
 }
 
-#footer_logo{
+.footer_logo{
     height: 80px;
     width: 100px;
-    margin-left: 60px;
-
+    margin-left: 30px;
 }
-#logo:hover{
+.footer_logo:hover{
     cursor: pointer;
 }
-
-
 .box_footer_copy-text-icon{
     display: flex;
     flex-direction: row;
@@ -473,15 +489,16 @@ flex-direktion: column;
 }
 .box_footer_copy-text-icon h5{
     padding-right: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#copy-icon{
+   
+    
+.copy_icon{
     height: 15px;
 }
 .box_footer_copy-text-icon h4{
     padding-left: 3px;
     padding-right: 3px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 
 }
 .box_footer_socialmedia-bar{
@@ -515,57 +532,18 @@ flex-direktion: column;
     color:  rgb(92, 116, 106);
 }
 .content_footer_last-band{
-    display: flex;
-    background-color: rgb(92, 116, 106);
+   display: flex;
+    background-color: rgb(128, 147, 157);
     color: white;
     align-items: center;
     padding-left: 60px; 
 }
- /* Latestpost sectionen kan inte 
-    ha margin då boxen ska gå
-    hela vägen över. Bloggpost ligger 60px från left pga
-    .content har margin-left 40px 
-    och i den ligger.bloggposter
-    med padding-left 20px.*/
-/*
-#foot_ad{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(36, 46, 42);
-    color: white;
-    max-height: 200px;
-    
-}
-#foot_ad h3{
-    margin-left: 40px;
-    margin-bottom: 0px;
-   
 
+.box_main_socialmedia-bar .fa-brands.fa-square-facebook {
+    color: rgb(128, 147, 157);
 }
-#foot_ad h4{
-    margin-left: 40px;
-    margin-top: 10px;
-   
+.box_main_socialmedia-bar .fa-brands.fa-square-instagram {
+    color: rgb(128, 147, 157);
 }
-.foot_bottom{
-
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
-   
-}
-.foot_bottom h6{
-    padding: 20px, 0px, 20px, 60px;
-    color:rgb(36, 46, 42)
-
-}
-#rights_box{
-    max-width: 150px;
-}
-.foot_sm-bar{
-    
-}*/
+.box_main_socialmedia-bar .fa-brands.fa-linkedin {
+    color: rgb(128, 147, 157);}
